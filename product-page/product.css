@@ -1,0 +1,8 @@
+/* cart-item-pakages */
+
+#pakages {
+}
+#pakages-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
