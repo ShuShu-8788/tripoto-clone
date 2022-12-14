@@ -18,7 +18,7 @@
       <h1>Tripoto's Mindful Retreats</h1>
       <div id="pakages-cards"></div>
     </section>
-    
+
     <!-- footer- -->
     <footer></footer>
   </body>
@@ -43,26 +43,33 @@
   function renderpakages(data) {
     let render = document.getElementById("pakages-cards");
     render.innerHTML = `
-    <div>
-      ${data.map((item) => {
-        return getascard(item.img, item.discription, item.location, item.price);
-      })}
-    </div>
+      ${data
+        .map((item) => {
+          return getascard(
+            item.img,
+            item.discription,
+            item.location,
+            item.price
+          );
+        })
+        .join("")}
     `;
   }
 
   function getascard(img, discription, location, price) {
     return `
+    <div>
     <img src="${img}"/>
-      <h2>${discription}</h2>
+      <h3>${discription.substring(30)}</h3>
       <span>${location}<span>
-      <button class="3D-2N-btn">3D.2N</button>
+      <button class="D32N-btn">3D.2N</button>
       <h1>$ ${price}</h1>
       <button class="pakage-btn">Book Now</button>
     <div class="pakage-Retreats">
       <img src="https://static2.tripoto.com/media/filter/tst/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
       <span>Tripoto's Mindful Retreats ✔️</span>
-      </div>
+    </div>
+    </div>
     `;
   }
 </script>
