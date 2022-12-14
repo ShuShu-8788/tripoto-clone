@@ -1,0 +1,29 @@
+/* cart-item-pakages */
+
+#pakages {
+  margin: 0 100px;
+}
+#pakages-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+#pakages-cards > div {
+  border: 1px solid red;
+  background-color: aliceblue;
+}
+#pakages-cards > div > img {
+  max-width: 80%;
+  border-radius: 4px;
+}
+.D32N-btn {
+}
+.pakage-btn {
+}
+.pakage-Retreats {
+}
+.pakage-Retreats > img {
+  max-width: 30px;
+  border-radius: 50px;
+}

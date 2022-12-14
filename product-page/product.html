@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tour-packages</title>
+    <link rel="stylesheet" href="/product-page/product.css" />
+  </head>
+  <body>
+    <nav></nav>
+
+    <header></header>
+
+    <!-- cart-item-pakages- -->
+    <section id="pakages">
+      <p>✈️ ≫ Tripoto's Exclusive Tours & Holiday Packages</p>
+      <h1>Tripoto's Mindful Retreats</h1>
+      <div id="pakages-cards"></div>
+    </section>
+
+    <!-- footer- -->
+    <footer></footer>
+  </body>
 </html>
+<script>
+  async function getpakages() {
+    try {
+      let res = await fetch(
+        "https://636a91d9c07d8f936da2035c.mockapi.io/travelWaala"
+      );
+      if (res.ok) {
+        let data = await res.json();
+        renderpakages(data);
+        console.log(data);
+      }
+    } catch (error) {
+      return "error";
+    }
+  }
+  getpakages();
+
+  function renderpakages(data) {
+    let render = document.getElementById("pakages-cards");
+    render.innerHTML = `
+      ${data
+        .map((item) => {
+          return getascard(
+            item.img,
+            item.discription,
+            item.location,
+            item.price
+          );
+        })
+        .join("")}
+    `;
+  }
+
+  function getascard(img, discription, location, price) {
+    return `
+    <div>
+    <img src="${img}"/>
+      <h3>${discription.substring(30)}</h3>
+      <span>${location}<span>
+      <button class="D32N-btn">3D.2N</button>
+      <h1>$ ${price}</h1>
+      <button class="pakage-btn">Book Now</button>
+    <div class="pakage-Retreats">
+      <img src="https://static2.tripoto.com/media/filter/tst/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
+      <span>Tripoto's Mindful Retreats ✔️</span>
+    </div>
+    </div>
+    `;
+  }
+</script>
