@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="/product-page/product.css" />
   </head>
   <body>
-    <nav></nav>
+    <!-- navbar -->
+
+    <div
+      class="nav-box"
+      style="
+        background-image: url('https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg');
+        background-size: 100% 100%;
+      "
+    >
+      <div class="nav-top">
+        <div class="nav-top-left"><a href="#">Travelwaala</a></div>
+        <div class="nav-top-right">
+          <div><a href="#">Inspirations</a></div>
+          <div><a href="#">Forum</a></div>
+          <div><a href="#">Packages</a></div>
+          <div><a href="#">Publish Trip</a></div>
+          <div><a href="#">Sign in</a></div>
+        </div>
+      </div>
+      <div class="nav-middle"><h1>Exclusive Tours & Holiday Packages</h1></div>
+      <input
+        type="text"
+        oninput="search()"
+        id="search"
+        placeholder="Search Packages For Destinations"
+      />
+    </div>
 
     <header></header>
 
     <!-- cart-item-pakages- -->
-    <section id="pakages">
+    <section id="packages">
       <p>✈️ ≫ Tripoto's Exclusive Tours & Holiday Packages</p>
       <h1>Tripoto's Mindful Retreats</h1>
       <div id="pakages-cards"></div>
@@ -60,16 +86,44 @@
     return `
     <div>
     <img src="${img}"/>
-      <h3>${discription.substring(30)}</h3>
-      <span>${location}<span>
-      <button class="D32N-btn">3D.2N</button>
-      <h1>$ ${price}</h1>
-      <button class="pakage-btn">Book Now</button>
+      
+    <div class="discription">${discription.substring(5, 100)}</div>
+     
+    <div class="location"> 
+      <img src="/product-page/location-svg_.svg" >
+      <span>${location}</span>
+      <button>3D.2N</button>
+    </div>
+      
+    <div class="price">
+      <span>$ ${price + " /person"} </span>
+      <button>Book Now</button>
+    </div>
+    
     <div class="pakage-Retreats">
-      <img src="https://static2.tripoto.com/media/filter/tst/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
+      <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
       <span>Tripoto's Mindful Retreats ✔️</span>
     </div>
+    
     </div>
     `;
+  }
+  async function search() {
+    try {
+      let q = document.getElementById("search").value;
+      let res = await fetch(
+        "https://636a91d9c07d8f936da2035c.mockapi.io/travelWaala"
+      );
+      let dataarr = await res.json();
+      let newData = dataarr.filter(function (item) {
+        return (
+          item.location.toLowerCase().includes(q.toLowerCase()) ||
+          item.price.toLowerCase().includes(q.toLowerCase())
+        );
+      });
+      renderpakages(newData);
+    } catch (err) {
+      return err;
+    }
   }
 </script>
