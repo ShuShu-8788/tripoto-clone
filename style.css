@@ -36,6 +36,81 @@ body{
     margin-bottom: 15px;
     margin-left: 300px;
 }
+.search-input{
+   height:50px;
+   width: 630px;
+   border-radius: 7px;
+   border:0px solid white;
+   padding-left: 20px;
+   margin-left: 310px;
+
+}
+#search-bar{
+    color:black;
+    margin-left: -50px;
+    display: inline-block;
+    height: 40px;
+    width:40px;
+    padding:10px;
+
+}
+#search-bar:hover{
+background-color:#eee;
+border-radius: 60%;
+}
+.submenu1{
+    width:200px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    right:-20px;
+    top:100%
+}
+.menu1{
+    position: relative;
+}
+.submenu1 ul{
+
+    list-style: none;
+}
+.submenu1 a{
+    color:#62646A;
+    padding:5px;
+    display: block;
+    }
+.menu1:hover .submenu1{
+display:block;
+} 
+.submenu1 a:hover{
+background-color: #eee
+}
+
+.submenu2{
+    width:200px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    right:-20px;
+    top:100%;  
+}
+.menu2{
+    position: relative;
+}
+.submenu2 ul{
+
+    list-style: none;
+}
+.submenu2 a{
+    color:#62646A;
+    padding:5px;
+    display: block;
+    }
+.menu2:hover .submenu2{
+display:block;
+} 
+.submenu2 a:hover{
+background-color: #eee
+}
 
             /* sponsered */
 
@@ -55,7 +130,7 @@ body{
     width:70%;
     margin-left: 170px;             
 }
-                             
+
 
                     /* service-tab  */
 
@@ -71,9 +146,18 @@ body{
     width:100%;
 }              
 
+                             /* image slider */
 
 
-                  /* place yo visit */
+.container{
+    width:80%;
+    margin:auto;
+}
+.container img{
+    width:100%;
+}                          
+
+                  /* top place to visit */
 
 .place-visit-header h2{
 margin-top: 20px;
@@ -107,7 +191,7 @@ width:100%;
 height:200px;
 } 
 
-                                /* image-section */
+                                /* kerala-image */
 
 .image-sec{
     width:80%;
@@ -177,5 +261,63 @@ margin: auto;
 }   
 
 hr{
-    color: gray;
+    color: black;
 }
+
+
+              /* footer */
+
+
+.footer-container{
+    width:93vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-rows:repeat(1,300px) ; */
+    gap:30px;
+}
+.footer-right a{
+    text-decoration: none;
+    color: black;
+}
+.footer-right p,h3{
+ margin-bottom:10px
+}
+.footer-left{
+    width:150px;
+    margin-left: 20px;
+}
+.footer-left-top a{
+    text-decoration: none;
+}
+.footer-left-middle{
+margin-top: 10px;    
+width:100%;
+font-size: 25px;
+}
+.footer-left-middle a{
+    color: black;
+}
+.footer-left-middle a:hover{
+    color: blue;
+}
+.footer-left-bottom{
+width:100%;
+}
+.footer-left-bottom img{
+     width:150px;
+     height:100px; 
+    }
+
+#up{
+    margin-top: 50px;
+    margin-bottom:50px
+}  
+#down{
+    margin-top: 50px;
+    margin-bottom:10px
+
+}   
+center{
+    margin-bottom: 50px;
+}     
+
