@@ -1,488 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Admin Page</title>
 
   <link rel="stylesheet" href="admin.css">
   <script src="https://kit.fontawesome.com/85dd1f4f19.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="head">
-      <img src="..\image\travelwaala.png" alt="">
+  <!-- button added for testing edit-from -->
+  <!-- <button id="view">View</button>
+  <button id="remove">Remove</button> -->
+
+  <!-- edit-form with in-built property display: none position fixed. -->
+  <div id="div-edit">
+    <form action="" id="edit-form">
+      <label for="image">Image Link :</label>
+      <input type="url" id="img">
+      <label for="location">Location :</label>
+      <input type="text" id="location">
+      <label for="price">Price :</label>
+      <input type="number" id="price">
+      <label for="description">Description :</label>
+      <textarea rows="15" cols="90" id="description"></textarea></input>
+      <input type="submit" value="Make Changes">
+    </form>
+  </div>
+
+  <div id="nav">
+    <button id="products-page">Products</button>
+    <button id="users-page">Users</button>
+    <button id="logout">Logout</button>
+  </div>
+
+  <!-- main section of the page -->
+  <div id="main">
+    <div id="search-div">
+      <select name="search" id="search-toggle">
+        <option value="id">ID</option>
+        <option value="location">Location</option>
+      </select>
+      <input type="text" id="search-data">
+      <button id="search">Search</button>
     </div>
 
-    <div class="search">
-      <form id="form"> 
-        <input type="search" id="query" name="q" placeholder="Search...">
-        <!-- <button>Search</button> -->
-      </form>
-    </div>
 
-    <div class="btn2">
-      <button>Add</button>
+    <div id="section">
+      <!-- append api data here. -->
     </div>
-
-    <div class="heading">
-      <h1>TravelWaala's Mindful Retreats</h1>
-    </div>
-    <div id="packages">
-      <!-- <h1></h1> -->
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1669036880_image_cover_c.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga</h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="heading">
-      <h1>TravelWaala's Mindful Retreats</h1>
-    </div>
-    <div id="packages">
-      <!-- <h1></h1> -->
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1669036880_image_cover_c.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga</h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="heading">
-      <h1>TravelWaala's Mindful Retreats</h1>
-    </div>
-    <div id="packages">
-      <!-- <h1></h1> -->
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1669036880_image_cover_c.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga</h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="heading">
-      <h1>TravelWaala's Mindful Retreats</h1>
-    </div>
-    <div id="packages">
-      <!-- <h1></h1> -->
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1669036880_image_cover_c.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga</h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="heading">
-      <h1>TravelWaala's Mindful Retreats</h1>
-    </div>
-    <div id="packages">
-      <!-- <h1></h1> -->
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1669036880_image_cover_c.jpg" alt="">
-        <h3>
-          Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga
-        </h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" alt="">
-        <h3> Minus cumque ea. Tempora libero deleniti beatae. Expedita maxime tempora sit reprehenderit ratione. Incidunt deserunt inventore suscipit distinctio sit at fuga</h3>
-        <div class="fonts">
-          <div>
-            <i class="fa-sharp fa-solid fa-location-dot"></i><span>  Himachal Pradesh</span>
-          </div>
-          <div class="btn">
-            <button>3D - 2N</button>
-          </div>
-          </div>
-        <div class="font">
-          <div>
-            <i class="fa-solid fa-indian-rupee-sign"></i><span> 7,000 /person</span>
-          </div>
-          <div class="btn1">
-            <button>Book Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 </body>
+
 </html>
+
+<script src="./admin.js"></script>
