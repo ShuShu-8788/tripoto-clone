@@ -1,0 +1,117 @@
+#section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.section-cards {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.section-cards>img {
+    width: 100%;
+}
+
+/* #edit-form>form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 20px 20px;
+}
+
+#edit-form>form>input {
+    width: 100%;
+}
+
+#edit-form {
+    border: 2px solid black;
+    width: 30%;
+} */
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    box-shadow: 0px 8px 24px 0 rgb(29 140 242 / 16%);
+    padding: 20px 30px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: whitesmoke;
+}
+
+#edit-form>#description {
+    height:200px;
+}
+
+#edit-form>label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#search-div>input, #search-div>select, #description, #edit-form>input {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#search-div>select{
+    margin-bottom: 20px;
+}
+
+button, #edit-form>input[type="submit"] {
+    margin-top: 20px;
+    align-items: center;
+    border: none;
+    padding: 15px 25px;
+    background-color: #5034ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover, #edit-form>input[type="submit"]:hover {
+    background-color: #7171de;
+    color: #F0F3FF;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+}
+
+#nav>button{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#main {
+    margin-top: 100px;
+}
+
+#search-div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+
+.div-for-btn{
+    display: flex;
+    justify-content: space-evenly;
+}

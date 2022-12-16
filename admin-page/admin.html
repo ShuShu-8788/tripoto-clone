@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Admin Page</title>
+
+  <link rel="stylesheet" href="admin.css">
+  <script src="https://kit.fontawesome.com/85dd1f4f19.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+  <!-- button added for testing edit-from -->
+  <!-- <button id="view">View</button>
+  <button id="remove">Remove</button> -->
+
+  <!-- edit-form with in-built property display: none position fixed. -->
+  <div id="div-edit">
+    <form action="" id="edit-form">
+      <label for="image">Image Link :</label>
+      <input type="url" id="img">
+      <label for="location">Location :</label>
+      <input type="text" id="location">
+      <label for="price">Price :</label>
+      <input type="number" id="price">
+      <label for="description">Description :</label>
+      <textarea rows="15" cols="90" id="description"></textarea></input>
+      <input type="submit" value="Make Changes">
+    </form>
+  </div>
+
+  <div id="nav">
+    <button id="products-page">Products</button>
+    <button id="users-page">Users</button>
+    <button id="logout">Logout</button>
+  </div>
+
+  <!-- main section of the page -->
+  <div id="main">
+    <div id="search-div">
+      <select name="search" id="search-toggle">
+        <option value="id">ID</option>
+        <option value="location">Location</option>
+      </select>
+      <input type="text" id="search-data">
+      <button id="search">Search</button>
+    </div>
+
+
+    <div id="section">
+      <!-- append api data here. -->
+    </div>
+  </div>
 </body>
+
 </html>
+
+<script src="./admin.js"></script>
