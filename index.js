@@ -20,3 +20,14 @@ setTimeout("changeImage()",3000)
 }
 changeImage()   
 
+
+// When the user scrolls the page, execute myFunction
+
+window.onscroll = function(){
+    if (window.pageYOffset > 80) {
+      document.querySelector(".nav-top").classList.add("fixedheader");
+    } else {
+      document.querySelector(".nav-top").classList.remove("fixedheader");
+    }
+  };
+  
