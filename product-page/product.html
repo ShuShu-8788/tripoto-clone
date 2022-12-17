@@ -9,7 +9,6 @@
   </head>
   <body>
     <!-- navbar -->
-
     <div
       class="nav-box"
       style="
@@ -44,7 +43,7 @@
       <h1>Tripoto's Mindful Retreats</h1>
       <div id="pakages-cards"></div>
     </section>
-
+    <!-- <<fw22_0023>_day-3> -->
     <!-- footer- -->
     <footer></footer>
   </body>
@@ -64,17 +63,20 @@
       return "error";
     }
   }
-  getpakages();
+  getpakages(); 
 
   function renderpakages(data) {
     let render = document.getElementById("pakages-cards");
     render.innerHTML = `
       ${data
         .map((item) => {
+         
+         
           return getascard(
             item.img,
             item.discription,
             item.location,
+
             item.price
           );
         })
@@ -97,7 +99,7 @@
       
     <div class="price">
       <span>$ ${price + " /person"} </span>
-      <button>Book Now</button>
+      <button onclick="booknow()">Book Now</button>
     </div>
     
     <div class="pakage-Retreats">
@@ -125,5 +127,9 @@
     } catch (err) {
       return err;
     }
+  }
+
+  function booknow() {
+    window.location = "/product-page/detail.html";
   }
 </script>

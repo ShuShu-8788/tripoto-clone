@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENTER OTP</h1>
+        <div class="userinput">
+            <input type="text" maxlength="1" id="ist" onkeyup="clickEvent(this,'sec')">
+            <input type="text" maxlength="1" id="sec" onkeyup="clickEvent(this, 'third')">
+            <input type="text" maxlength="1" id="third" onkeyup="clickEvent(this, 'fourth')">
+            <input type="text" maxlength="1" id="fourth" onkeyup="clickEvent(this, 'fifth')">
+            <input type="text" maxlength="1" id="fifth">
+        </div>
+        <button id="btn" onclick="fun()">Confirm</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function clickEvent(first,last)
+    {
+        if (first.value.length)
+        {
+            document.getElementById(last).focus();
+        }
+    }
+
+    function fun()
+    {
+        alert("Entered OTP is valid")
+        window.location.href = "C:\Users\DELL\Desktop\TravelWaala Project\quick-snake-3428\index.html"
+    }
+</script>
+
