@@ -115,3 +115,8 @@ button:hover, #edit-form>input[type="submit"]:hover {
     display: flex;
     justify-content: space-evenly;
 }
+
+a>button, a  {
+    margin-top: auto;
+    margin-bottom: auto;
+}

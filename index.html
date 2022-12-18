@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -8,12 +9,40 @@
     <title>Travelwaala: Share and Discover Travel Stories..</title>
     <link rel="icon" href="https://www.linkpicture.com/q/travelwaala-logo_1.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./login-signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
-               <!-- navbar -->
 
-    <div class="nav-box" style="background-image:url('https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg') ;background-size: 100% 100% ">
+<body>
+
+    <div id="signup-div">
+        <form action="" id="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="name@mail.com">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="*******">
+            <label for="mobile">Mobile</label>
+            <input type="number" id="mobile" placeholder="9876543210">
+            <input type="submit" value="Signup">
+            <label for="" id="login-label">Already registered? <a href="#" id="login-link">Login</a></label>
+        </form>
+    </div>
+    <div id="login-div">
+        <form action="" id="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="login-email" placeholder="name@mail.com">
+            <label for="password">Password</label>
+            <input type="password" id="login-password" placeholder="*******">
+            <input type="submit" value="Login">
+            <label for="" id="signup-label">Don't have account? <a href="#" id="signup-link">Signup</a></label>
+        </form>
+    </div>
+    <!-- navbar -->
+
+    <div class="nav-box"
+        style="background-image:url('https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg') ;background-size: 100% 100% ">
         <div class="nav-top">
             <div class="nav-top-left"><a href="#">Travelwaala</a></div>
             <div class="nav-top-right">
@@ -46,29 +75,50 @@
                         </ul>
                     </div>
                 </div>
-                <div><a href="#">Sign in</a></div>
+                <div id="admin-page-div">
+                    <a href="./admin-page/admin.html" id="admin-page-btn">Admin Page</a>
+                </div>
+                <div class="signup">
+                    <a href="#" id="signup-btn">Sign in</a>
+                </div>
+                <div class="usermenu">
+                    <a href="#" id="user-profile">User</a>
+                    <div class="usersubmenu">
+                        <ul>
+                            <li><a href="#">View Profile</a></li>
+                            <li><a href="#">My Bookings</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Messages</a></li>
+                            <li><a href="#">Change Password</a></li>
+                            <li><a href="#" id="logout-btn">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="nav-middle"><h1>India's Largest Community of Travellers</h1></div>
+        <div class="nav-middle">
+            <h1>India's Largest Community of Travellers</h1>
+        </div>
         <input class="search-input" type="text" placeholder="Search for itineraries,destinations,hotels or activities">
         <span id="search-bar"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
     </div>
 
-             <!-- sponsered -->
+    <!-- sponsered -->
 
-    <p class="sponser-heading"><a href="">SPONSORED</a></p>         
+
+    <p class="sponser-heading"><a href="">SPONSORED</a></p>
     <div class="sponser-img">
-        <a href="#"><img width= 100% src="https://tpc.googlesyndication.com/simgad/968686610659141041" alt="spon"></a>
+        <a href="#"><img width=100% src="https://tpc.googlesyndication.com/simgad/968686610659141041" alt="spon"></a>
     </div>
-    
 
-                     <!-- service-tab -->
+
+    <!-- service-tab -->
 
     <div class="service-tab">
         <div class="service-div">
             <a href="#">
                 <img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png" alt="">
-            </a>  
+            </a>
         </div>
         <div class="service-div">
             <a href="#">
@@ -88,18 +138,63 @@
     </div>
 
 
-                         <!-- corousel/slider-1 -->
-                              
-    <div class="place-visit-header"><h2>In the Spotlight: Partnerships</h2></div>
+    <!-- corousel/slider-1 -->
+
+    <div class="place-visit-header">
+        <h2>In the Spotlight: Partnerships</h2>
+    </div>
     <div class="arrow">
         <section id="sec6">
             <div id="spotlight-cards">
                 <div>
-                    <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1671021501_activity_scuba_diving_in_oman_1.jpg" id="img1"/></a>
-                    <a href="" class="desc1"><p>oman tourism</p></a>
-                    <a href="" class="desc2"><p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</p></a>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1671021501_activity_scuba_diving_in_oman_1.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
                 </div>
                 <div>
+
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670839402_2020_rws_acw_kv3_sharktank_4355_lr.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1653562686_275721311_336154091889496_2451172917242741439_n.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670586190_image_20221209_165038_253_1.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670839402_2020_rws_acw_kv3_sharktank_4355_lr.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>RESORTS WORLD SENTOSA</p></a>
                     <a href="" class="desc2"><p>These Thrilling Experiences In Resorts World Sentosa Will Have You Booking A Srip So Singapore </p></a>
@@ -113,12 +208,61 @@
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1670586190_image_20221209_165038_253_1.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>RESORTS WORLD SENTOSA</p></a>
                     <a href="" class="desc2"><p>A Curated Guide To The Incredible Attractions Of Resorts World Sentosa,Singapore </p></a>
+
                 </div>
             </div>
         </section>
         <section id="sec7">
             <div id="spotlight-cards">
                 <div>
+
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1663242404_1662994966_gostops_ooty_1.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1666862339_1666247652_26_4o693h3.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659354694_yaopey_yong_flmptucjkto_unsplash.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>SAUDI TOURISM AUTHORITY</p></a>
                     <a href="" class="desc2"><p>This Quiz On Saudi Will Help You Design Your Best Adventure!</p></a>
@@ -137,12 +281,60 @@
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659354694_yaopey_yong_flmptucjkto_unsplash.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>AMBERSTUDENT</p></a>
                     <a href="" class="desc2"><p>Students In London? Here's Your Guide To Affordable And Exciting Ways To Explore The City</p></a>
+
                 </div>
             </div>
         </section>
         <section id="sec8">
             <div id="spotlight-cards">
                 <div>
+
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1661937030_manali_5_1.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660817736_078_commonarea_07_min.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660310642_j_1.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807748_shutterstock_1876968394_1_min.jpg"
+                            id="img1" /></a>
+                    <a href="" class="desc1">
+                        <p>oman tourism</p>
+                    </a>
+                    <a href="" class="desc2">
+                        <p>Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen
+                            Lodges</p>
+                    </a>
+
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1661937030_manali_5_1.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>GOSTOPS</p></a>
                     <a href="" class="desc2"><p>9 Hours From,This GoSTOPS Hostel In Manali Offers Spectacular Views With A Dose Of Fun</p></a>
@@ -161,674 +353,897 @@
                     <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660807748_shutterstock_1876968394_1_min.jpg" id="img1"/></a>
                     <a href="" class="desc1"><p>SAUDI TOURISM AUTHORITY</p></a>
                     <a href="" class="desc2"><p>Offering A Mixture Of Culture And Modernity,Riyadh Is Perfect For Every Kind Of Traveller</p></a>
+
                 </div>
             </div>
         </section>
         <button onclick="spotlight_minus()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
         <button onclick="spotlight_plus()" class="next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-                                           
-                        
 
 
-                    <!-- image slider -->
+
+
+    <!-- image slider -->
 
 
     <div class="container">
-        
-    </div>
-                
 
-                       <!-- top place to visit  -->
-    
+    </div>
+
+
+    <!-- top place to visit  -->
+
     <div class="place-visit-header">
         <h2>Find Best Places to Visit in India in December & January</h2>
     </div>
     <div class="place-visit">
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949651_1636600759_110.png" alt=""></a>
-            <a href="#"><h3>10 Best Places To Experience The Chills This Winter</h3></a>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949651_1636600759_110.png"
+                    alt=""></a>
+            <a href="#">
+                <h3>10 Best Places To Experience The Chills This Winter</h3>
+            </a>
             <span>By <a href="">Kadambari Bhatte (curlytravelmess)</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949736_1635179153_pahalgam_gulmarg.jpeg" alt=""></a>
-            <a href="#"><h3>15 Winter Destinations, That Are Not Shimla Or Manali</h3></a>
+            <a href="#"><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666949736_1635179153_pahalgam_gulmarg.jpeg"
+                    alt=""></a>
+            <a href="#">
+                <h3>15 Winter Destinations, That Are Not Shimla Or Manali</h3>
+            </a>
             <span>By <a href="">Karishma Shaikh</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1478950878_1453102404_panamik_hot_geyser_springs_in_nubra_valley_ladakh.jpg" alt=""></a>
-            <a href="#"><h3>12 Hot Springs In India That  Will Warm You Up This Winter</h3></a>
+            <a href="#"><img
+                    src="https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1478950878_1453102404_panamik_hot_geyser_springs_in_nubra_valley_ladakh.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>12 Hot Springs In India That Will Warm You Up This Winter</h3>
+            </a>
             <span>By <a href=""> Disha Kapkoti</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg" alt=""></a>
-            <a href="#"><h3>Trips To Take With Your Bae This Winter In India</h3></a>
+            <a href="#"><img
+                    src="https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Trips To Take With Your Bae This Winter In India</h3>
+            </a>
             <span>By <a href=""> Mouna Nanaiah</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666950604_1666207073_hornbill_festival_pix_by_vikramjit_kakati.jpg" alt=""></a>
-            <a href="#"><h3>Nagaland's Hornbill Festival Is Happening This December</h3></a>
+            <a href="#"><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666950604_1666207073_hornbill_festival_pix_by_vikramjit_kakati.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Nagaland's Hornbill Festival Is Happening This December</h3>
+            </a>
             <span>By <a href=""> Shruti Singh</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621772_1479799117_19594481674_73bfdd5e4a_z.jpg" alt=""></a>
-            <a href="#"><h3>26 Best Places In India To Visit This December</h3></a>
+            <a href="#"><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621772_1479799117_19594481674_73bfdd5e4a_z.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>26 Best Places In India To Visit This December</h3>
+            </a>
             <span>By <a href=""> Pritha Puri</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615182_1669300591_snip20220609_1_1024x573.png" alt=""></a>
-            <a href="#"><h3>10 Events You Can't Miss This  Winter In Delhi</h3></a>
+            <a href="#"><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615182_1669300591_snip20220609_1_1024x573.png"
+                    alt=""></a>
+            <a href="#">
+                <h3>10 Events You Can't Miss This Winter In Delhi</h3>
+            </a>
             <span>By <a href=""> Tanisha Mundra</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img  src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632229_1635615472_picsart_10_30_11_07_24.jpg" alt=""></a>
-            <a href="#"><h3>10 Recommended Destinations  For Solo Travelers</h3></a>
+            <a href="#"><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632229_1635615472_picsart_10_30_11_07_24.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>10 Recommended Destinations For Solo Travelers</h3>
+            </a>
             <span>By <a href=""> Srishti (still.winds)</a></span>
         </div>
     </div>
 
 
-                               <!-- kerala image-->
+    <!-- kerala image-->
 
     <div class="image-sec">
-       <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1669366871_kerala.jpg" alt=""></a>
+        <a href="#"><img width="100%"
+                src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1669366871_kerala.jpg" alt=""></a>
     </div>
 
-                            
-                           <!-- best place to visit -->
-    
+
+    <!-- best place to visit -->
+
     <div class="best-place-container">
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368370_1650865492_nature_photographer_29ezcwtmtnm_unsplash.jpg" alt=""></a>
-            <a href=""><h3>Best Places To Visit In Kerala During Your Next Trip</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368370_1650865492_nature_photographer_29ezcwtmtnm_unsplash.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Best Places To Visit In Kerala During Your Next Trip</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368402_1656747258_dream_holidays_c8mz8fp_zvc_unsplash.jpg" alt=""></a>
-            <a href=""><h3>Complete Guide To Kovalam Beach In Kerala</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368402_1656747258_dream_holidays_c8mz8fp_zvc_unsplash.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Complete Guide To Kovalam Beach In Kerala</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368422_1650645286.jpeg" alt=""></a>
-            <a href=""><h3>Top 10 Resorts In Munnar For Your Next Holiday</h3></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368422_1650645286.jpeg"
+                    alt=""></a>
+            <a href="">
+                <h3>Top 10 Resorts In Munnar For Your Next Holiday</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368429_1669359075_screenshot_2022_11_25_at_12_18_09_pm.png" alt=""></a>
-            <a href=""><h3>Save The Date: 5th Edition Of Kochi Muziris-Biennale
-            </h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368429_1669359075_screenshot_2022_11_25_at_12_18_09_pm.png"
+                    alt=""></a>
+            <a href="">
+                <h3>Save The Date: 5th Edition Of Kochi Muziris-Biennale
+                </h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368461_1651231875_screenshot_2022_04_29_at_5_01_06_pm.png" alt=""></a>
-            <a href=""><h3>Around Kerala In 15 Dishes! Must Eat Food When In Kerala.</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368461_1651231875_screenshot_2022_04_29_at_5_01_06_pm.png"
+                    alt=""></a>
+            <a href="">
+                <h3>Around Kerala In 15 Dishes! Must Eat Food When In Kerala.</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368469_1562007949_suna_hai_uske_labon_se_gulab_jalte_hai5_62.png" alt=""></a>
-            <a href=""><h3>7 Temple Festivals In Kerala That You Must Attend</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368469_1562007949_suna_hai_uske_labon_se_gulab_jalte_hai5_62.png"
+                    alt=""></a>
+            <a href="">
+                <h3>7 Temple Festivals In Kerala That You Must Attend</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368483_1510408558_cruise1.jpg" alt=""></a>
-            <a href=""><h3>This Luxury Cruise In Kerala For Your Next Family Vacay</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669368483_1510408558_cruise1.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>This Luxury Cruise In Kerala For Your Next Family Vacay</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369517_1592307582_1592307581400.jpg" alt=""></a>
-            <a href=""><h3>Scenes Of A Kathakali Performance I Witnessed</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369517_1592307582_1592307581400.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Scenes Of A Kathakali Performance I Witnessed</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369530_1487525352_backwater_2032737_1280.jpg" alt=""></a>
-            <a href=""><h3>Planning A 6-Day Budget Trip To Kerala </h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369530_1487525352_backwater_2032737_1280.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Planning A 6-Day Budget Trip To Kerala </h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369542_1639536937_adobestock_198014696_scaled.jpeg" alt=""></a>
-            <a href=""><h3>Spend A Night At India's Greenest Tree Hotel In Kerala</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369542_1639536937_adobestock_198014696_scaled.jpeg"
+                    alt=""></a>
+            <a href="">
+                <h3>Spend A Night At India's Greenest Tree Hotel In Kerala</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369572_1656771413_arnold_antoo_yp6fohzfdvs_unsplash.jpg" alt=""></a>
-            <a href=""><h3>25 Places In Wayanad For Your Hilly Vacation</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369572_1656771413_arnold_antoo_yp6fohzfdvs_unsplash.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>25 Places In Wayanad For Your Hilly Vacation</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369584_1668695824_abhishek_prasad_n3vzlebhovk_unsplash.jpg" alt=""></a>
-            <a href=""><h3>These Luxury Properties In Kerala For Your Honeymoon</h3></a>
-        </div>   
-    </div> 
-    
-    
-
-
-                           <!--corousel/slider-2-->
-
-    <div class="place-visit-header"><h2>Exclusively Curated: Tripoto's Mindful Retreats</h2></div>
-    <div class="arrow">
-    <section id="sec1">
-        <div id="pakages-cards">
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg" id="img1"/></a>
-                <div class="discription">
-                    <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</a>
-                    
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Mussoorie</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span class="rupee">7,500</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" id="img2"/></a>
-                <div class="discription">
-                <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala</a> 
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Himachal Pradesh</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>7,000</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645772836_image_cover.jpg" id="img3"/></a>
-                <div class="discription">
-                    Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Mukteshwar</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>8,600</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669369584_1668695824_abhishek_prasad_n3vzlebhovk_unsplash.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>These Luxury Properties In Kerala For Your Honeymoon</h3>
+            </a>
         </div>
-    </section>
-    <section id="sec2">
-        <div id="pakages-cards">
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" id="img4"/></a>
-                <div class="discription">
-                    <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</a>
-                    
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Himachal Pradesh</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span class="rupee">8,500</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg" id="img5"/></a>
-                <div class="discription">
-                <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala</a> 
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Manali</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>9,850</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg" id="img6"/></a>
-                <div class="discription">
-                    Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Dharamshala</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>13750</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sec3">
-        <div id="pakages-cards">
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg" id="img7"/></a>
-                <div class="discription">
-                    <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</a>
-                    
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Nainital</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span class="rupee">5,900</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657204838_omya_img_cover_b.jpg" id="img8"/></a>
-                <div class="discription">
-                <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala</a> 
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Bir</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>10,770</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670945801_screenshot_2022_12_13_at_3_46_59_pm.png" id="img9"/></a>
-                <div class="discription">
-                    Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Naggar</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>7,715 </span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <button onclick="changeS2()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-    <button onclick="changeS()" class="next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
 
 
 
-                          
-                    <!-- top place to visit  -->
+    <!--corousel/slider-2-->
+
+    <div class="place-visit-header">
+        <h2>Exclusively Curated: Tripoto's Mindful Retreats</h2>
+    </div>
+    <div class="arrow">
+        <section id="sec1">
+            <div id="pakages-cards">
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657734830_image_cover_a.jpg"
+                            id="img1" /></a>
+                    <div class="discription">
+                        <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods |
+                            Seegreen Lodges</a>
+
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mussoorie</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="rupee">7,500</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg"
+                            id="img2" /></a>
+                    <div class="discription">
+                        <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End
+                            Villa, Dharamshala</a>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Himachal Pradesh</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>7,000</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1645772836_image_cover.jpg"
+                            id="img3" /></a>
+                    <div class="discription">
+                        Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa,
+                        Dharamshala
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mukteshwar</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>8,600</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec2">
+            <div id="pakages-cards">
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg"
+                            id="img4" /></a>
+                    <div class="discription">
+                        <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods |
+                            Seegreen Lodges</a>
+
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Himachal Pradesh</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="rupee">8,500</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg"
+                            id="img5" /></a>
+                    <div class="discription">
+                        <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End
+                            Villa, Dharamshala</a>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Manali</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>9,850</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg"
+                            id="img6" /></a>
+                    <div class="discription">
+                        Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa,
+                        Dharamshala
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Dharamshala</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>13750</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sec3">
+            <div id="pakages-cards">
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653394847_nw_c2.jpg"
+                            id="img7" /></a>
+                    <div class="discription">
+                        <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods |
+                            Seegreen Lodges</a>
+
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Nainital</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="rupee">5,900</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1657204838_omya_img_cover_b.jpg"
+                            id="img8" /></a>
+                    <div class="discription">
+                        <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End
+                            Villa, Dharamshala</a>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Bir</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>10,770</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670945801_screenshot_2022_12_13_at_3_46_59_pm.png"
+                            id="img9" /></a>
+                    <div class="discription">
+                        Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa,
+                        Dharamshala
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Naggar</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>7,715 </span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button onclick="changeS2()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button onclick="changeS()" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+
+
+
+
+    <!-- top place to visit  -->
 
 
     <div class="place-visit-header">
-    <h2>Plan You Next International Trip During December & January</h2>
+        <h2>Plan You Next International Trip During December & January</h2>
     </div>
     <div class="place-visit">
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632307_1571062180_florian_wehde_fwtpzbjw_a0_unsplash.jpg" alt=""></a>
-            <a href="#"><h3>Fly To These December Destinations In A Budget</h3></a>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669632307_1571062180_florian_wehde_fwtpzbjw_a0_unsplash.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Fly To These December Destinations In A Budget</h3>
+            </a>
             <span>By <a href=""> Prageet Goel</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://static2.tripoto.com/media/filter/tst/img/388225/TripDocument/1508499780_106187671.jpg" alt=""></a>
-            <a href="#"><h3>Best Honeymoon Destinations To Head To This December</h3></a>
+            <a href="#"><img width="100%"
+                    src="https://static2.tripoto.com/media/filter/tst/img/388225/TripDocument/1508499780_106187671.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Best Honeymoon Destinations To Head To This December</h3>
+            </a>
             <span>By <a href=""> Saumiabee</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg" alt=""></a>
-            <a href="#"><h3>Add These Offbeat Places In Europe To Your List</h3></a>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Add These Offbeat Places In Europe To Your List</h3>
+            </a>
             <span>By <a href=""> Sumedha Bharpilania</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg" alt=""></a>
-            <a href="#"><h3>You Can Travel To Serbia From India Without A Visa</h3></a>
-            <span>By <a href="">  Ayushee Chaudhary</a></span>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>You Can Travel To Serbia From India Without A Visa</h3>
+            </a>
+            <span>By <a href=""> Ayushee Chaudhary</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664284174_1638860409_photo_1459600661907_3c72c54955de.jpeg" alt=""></a>
-            <a href="#"><h3>The Ultimate Guide For Your Next Trip To Dubai</h3></a>
-            <span>By <a href="">  Tripoto</a></span>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664284174_1638860409_photo_1459600661907_3c72c54955de.jpeg"
+                    alt=""></a>
+            <a href="#">
+                <h3>The Ultimate Guide For Your Next Trip To Dubai</h3>
+            </a>
+            <span>By <a href=""> Tripoto</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666951409_1654136098_chinatown_mural_art.jpg" alt=""></a>
-            <a href="#"><h3>Travel To Singapore & Soak In The Sunshine</h3></a>
-            <span>By <a href="">  Kadambari Bhatte (curlytravelmess)</a></span>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666951409_1654136098_chinatown_mural_art.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Travel To Singapore & Soak In The Sunshine</h3>
+            </a>
+            <span>By <a href=""> Kadambari Bhatte (curlytravelmess)</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666952031_1637516919_img_8593.jpg" alt=""></a>
-            <a href="#"><h3>A Solo Traveller's Guide To Explore Egypt</h3></a>
-            <span>By <a href="">  Karishma Shaikh</a></span>
+            <a href="#"><img width="100%"
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666952031_1637516919_img_8593.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>A Solo Traveller's Guide To Explore Egypt</h3>
+            </a>
+            <span>By <a href=""> Karishma Shaikh</a></span>
         </div>
         <div class="place-visit-para">
-            <a href="#"><img width="100%" src="https://static2.tripoto.com/media/filter/tst/img/464802/TripDocument/1576478834_cover.jpg" alt=""></a>
-            <a href="#"><h3>Top 10 Places Around The World To Celebrate Christmas</h3></a>
-            <span>By <a href="">  Stamped Passport_Charu</a></span>
+            <a href="#"><img width="100%"
+                    src="https://static2.tripoto.com/media/filter/tst/img/464802/TripDocument/1576478834_cover.jpg"
+                    alt=""></a>
+            <a href="#">
+                <h3>Top 10 Places Around The World To Celebrate Christmas</h3>
+            </a>
+            <span>By <a href=""> Stamped Passport_Charu</a></span>
         </div>
 
-    </div>                    
+    </div>
 
- 
-               <!-- maldiv-image-->
+
+    <!-- maldiv-image-->
 
     <div class="image-sec">
-        <a href="#"><img width="100%" src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1669615247_maldives.jpg" alt=""></a>
+        <a href="#"><img width="100%"
+                src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1669615247_maldives.jpg" alt=""></a>
     </div>
 
-                    <!-- best place to visit -->
-    
+    <!-- best place to visit -->
+
     <div class="best-place-container">
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615369_1454863237_by_lisa.jpg" alt=""></a>
-            <a href=""><h3>4-Day Guide To A Perfect Holiday In Maldives</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615369_1454863237_by_lisa.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>4-Day Guide To A Perfect Holiday In Maldives</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615766_1646662170_maldives_11.jpg" alt=""></a>
-            <a href=""><h3>All You Need To Know To Plan Your Trip To Maldives</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615766_1646662170_maldives_11.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>All You Need To Know To Plan Your Trip To Maldives</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615460_1610970653_maldives.jpg" alt=""></a>
-            <a href=""><h3>25 Totally Insanely Fun Things TO DO In MALDIVES</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615460_1610970653_maldives.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>25 Totally Insanely Fun Things TO DO In MALDIVES</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615905_1584046768_screenshot_2020_03_13_at_2_26_44_am.png" alt=""></a>
-            <a href=""><h3>Snorkeling With Turtles And More In Maldives</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669615905_1584046768_screenshot_2020_03_13_at_2_26_44_am.png"
+                    alt=""></a>
+            <a href="">
+                <h3>Snorkeling With Turtles And More In Maldives</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669616768_1643878515_gpab2067_1641808915120.jpg" alt=""></a>
-            <a href=""><h3>Here's A Perfect Guide To A Budget Holiday In Maldives</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669616768_1643878515_gpab2067_1641808915120.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Here's A Perfect Guide To A Budget Holiday In Maldives</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669620259_1564126081_manta_1639965_640.jpg" alt=""></a>
-            <a href=""><h3>Here's A SECRET No One Tells You About Maldives!</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669620259_1564126081_manta_1639965_640.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>Here's A SECRET No One Tells You About Maldives!</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669620317_1635321495_1024px_maldivian_dish_kandu_kulkulhu_08.jpg" alt=""></a>
-            <a href=""><h3>The Perfect Guide For Authentic Maldivian Cuisine</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669620317_1635321495_1024px_maldivian_dish_kandu_kulkulhu_08.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>The Perfect Guide For Authentic Maldivian Cuisine</h3>
+            </a>
         </div>
         <div class="best-place-box">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621472_1628309324_mohamed_nashah_4ngesu9aooq_unsplash.jpg" alt=""></a>
-            <a href=""><h3>A Solo Traveller's Guide To Maldives</h3></a>
+            <a href=""><img
+                    src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669621472_1628309324_mohamed_nashah_4ngesu9aooq_unsplash.jpg"
+                    alt=""></a>
+            <a href="">
+                <h3>A Solo Traveller's Guide To Maldives</h3>
+            </a>
         </div>
     </div>
-         
-                <!-- corousel/slider-3...slider-2 nd slider-3 have same css  -->
+
+    <!-- corousel/slider-3...slider-2 nd slider-3 have same css  -->
 
 
-    <div class="place-visit-header"><h2>Exclusively Curated: Tripoto's Mindful Retreats</h2></div>
+    <div class="place-visit-header">
+        <h2>Exclusively Curated: Tripoto's Mindful Retreats</h2>
+    </div>
     <div class="arrow">
-    <section id="sec4">
-        <div id="pakages-cards">
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1565782355_kerala_app.jpg" id="img1"/></a>
-                <div class="discription">
-                    <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</a>
-                    
+        <section id="sec4">
+            <div id="pakages-cards">
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1565782355_kerala_app.jpg"
+                            id="img1" /></a>
+                    <div class="discription">
+                        <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods |
+                            Seegreen Lodges</a>
+
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mussoorie</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="rupee">7,500</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Mussoorie</span>
-                    <button>3D.2N</button>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670945801_screenshot_2022_12_13_at_3_46_59_pm.png"
+                            id="img2" /></a>
+                    <div class="discription">
+                        <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End
+                            Villa, Dharamshala</a>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Himachal Pradesh</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>7,000</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span class="rupee">7,500</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1670945801_screenshot_2022_12_13_at_3_46_59_pm.png" id="img2"/></a>
-                <div class="discription">
-                <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala</a> 
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Himachal Pradesh</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>7,000</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg" id="img3"/></a>
-                <div class="discription">
-                    Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Mukteshwar</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>8,600</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sec5">
-        <div id="pakages-cards">
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" id="img4"/></a>
-                <div class="discription">
-                    <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods | Seegreen Lodges</a>
-                    
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Himachal Pradesh</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span class="rupee">8,500</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg"
+                            id="img3" /></a>
+                    <div class="discription">
+                        Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa,
+                        Dharamshala
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Mukteshwar</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>8,600</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
             </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg" id="img5"/></a>
-                <div class="discription">
-                <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala</a> 
+        </section>
+        <section id="sec5">
+            <div id="pakages-cards">
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg"
+                            id="img4" /></a>
+                    <div class="discription">
+                        <a href="">Go On A Thrilling Night-Walk To Lambi Dehar AS You Stay In A cabin In The Woods |
+                            Seegreen Lodges</a>
+
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Himachal Pradesh</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span class="rupee">8,500</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Manali</span>
-                    <button>3D.2N</button>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1653391344_ln_c1.jpg"
+                            id="img5" /></a>
+                    <div class="discription">
+                        <a href="">Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End
+                            Villa, Dharamshala</a>
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Manali</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>9,850</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>9,850</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
+                <div>
+                    <a href=""><img
+                            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg"
+                            id="img6" /></a>
+                    <div class="discription">
+                        Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa,
+                        Dharamshala
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Dharamshala</span>
+                        <button>3D.2N</button>
+                    </div>
+                    <div class="price">
+                        <span>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                            <span>13750</span>
+                            <span> /person</span>
+                        </span>
+                        <button onclick="booknow()">Book Now</button>
+                    </div>
+                    <div class="pakage-Retreats">
+                        <img
+                            src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" />
+                        <span>Tripoto's Mindful Retreats ✔️</span>
+                    </div>
                 </div>
             </div>
-            <div>
-                <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1654504108_ce_c1.jpg" id="img6"/></a>
-                <div class="discription">
-                    Trek to Triund & Experience Royalty as You Stay at a Maharaja’s Home Clouds End Villa, Dharamshala
-                </div>
-                <div class="location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Dharamshala</span>
-                    <button>3D.2N</button>
-                </div>
-                <div class="price">
-                    <span>
-                        <i class="fa-solid fa-indian-rupee-sign"></i>
-                        <span>13750</span>
-                        <span> /person</span>
-                    </span>    
-                    <button onclick="booknow()">Book Now</button>
-                </div>
-                <div class="pakage-Retreats">
-                    <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"/>
-                    <span>Tripoto's Mindful Retreats ✔️</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <button onclick="changeS4()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
-    <button onclick="changeS3()" class="next"><i class="fa-solid fa-chevron-right"></i></button>
+        </section>
+        <button onclick="changeS4()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button onclick="changeS3()" class="next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    
 
 
 
-           <!-- creators of the month -->
+
+    <!-- creators of the month -->
 
     <h2 class="creator-header">In the Spotlight: Tripoto Creators of the Month - November 2022</h2>
-    <p class="creator-header">Tripoto Family is a community of travel content creators who create stunning photo blogs, engaging reels and videos as well as informative articles. Here are the <br> most  promising creators of the month who shared their favorite Winter Experiences with us. Kudos to Tripoto's best creators for Nov 2022!</p>      
+    <p class="creator-header">Tripoto Family is a community of travel content creators who create stunning photo blogs,
+        engaging reels and videos as well as informative articles. Here are the <br> most promising creators of the
+        month who shared their favorite Winter Experiences with us. Kudos to Tripoto's best creators for Nov 2022!</p>
     <div class="creator-pro">
         <div class="creator-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220316_1st_cards_1.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220316_1st_cards_1.jpg"
+                    alt=""></a>
         </div>
         <div class="creator-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220256_19.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220256_19.jpg"
+                    alt=""></a>
         </div>
         <div class="creator-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220280_18.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220280_18.jpg"
+                    alt=""></a>
         </div>
         <div class="creator-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220306_17.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1670220306_17.jpg"
+                    alt=""></a>
         </div>
         <div class="creator-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1667311974_2nd_card.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1667311974_2nd_card.jpg"
+                    alt=""></a>
         </div>
-    </div>  
-    
-    
-               <!-- destination of the month -->
+    </div>
+
+
+    <!-- destination of the month -->
 
     <h2 class="destination-header">Plan Your Next Trip Using Tripoto's Complete Destination Guides</h2>
     <div class="destination-pro">
         <div class="destination-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669205399_germany.jpeg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669205399_germany.jpeg"
+                    alt=""></a>
         </div>
         <div class="destination-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg"
+                    alt=""></a>
         </div>
         <div class="destination-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216481_rajasthan.jpg"
+                    alt=""></a>
         </div>
         <div class="destination-para">
-            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt=""></a>
+            <a href=""><img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg"
+                    alt=""></a>
         </div>
     </div>
-    
-                   <!-- footer -->
-     
+
+    <!-- footer -->
+
     <hr id="up">
 
     <div class="footer-container">
         <div class="footer-left">
             <div class="footer-left-top">
-                <a href="#"><h2>Travelwaala</h2></a>
+                <a href="#">
+                    <h2>Travelwaala</h2>
+                </a>
             </div>
             <hr id="mid">
             <div class="footer-left-middle">
@@ -836,15 +1251,17 @@
                 <a href=""><i class="fa-brands fa-square-twitter"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-square-youtube"></i></a>
-                <a href=""><i class="fa-solid fa-wifi"></i></a>      
+                <a href=""><i class="fa-solid fa-wifi"></i></a>
             </div>
             <div class="footer-left-bottom">
-                <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/006/656/871/large_2x/google-play-and-download-playstore-free-vector.jpg" alt=""></a>
+                <a href="#"><img
+                        src="https://static.vecteezy.com/system/resources/previews/006/656/871/large_2x/google-play-and-download-playstore-free-vector.jpg"
+                        alt=""></a>
             </div>
 
         </div>
         <div class="footer-right">
-            <h3>About Tripoto</h3> 
+            <h3>About Tripoto</h3>
             <p><a href="">How It Works</a></p>
             <p><a href="">FAQ’s</a></p>
             <p><a href="">Privacy Policy</a></p>
@@ -853,7 +1270,7 @@
             <p><a href=" ">Contact Us</a></p>
         </div>
         <div class="footer-right">
-            <h3>Products</h3> 
+            <h3>Products</h3>
             <p><a href="">Tour Packages</a></p>
             <p><a href="">Travel Guides</a></p>
             <p><a href="">Trips & Itineraries</a></p>
@@ -864,8 +1281,8 @@
             <p><a href="">Honeymoon Packages</a></p>
         </div>
 
-         <div class="footer-right">
-            <h3>Important Travel Links</h3> 
+        <div class="footer-right">
+            <h3>Important Travel Links</h3>
             <p><a href="">Goa Tourism</a></p>
             <p><a href="">Dubai Tourism</a></p>
             <p><a href="">Singapore Tourism</a></p>
@@ -875,8 +1292,8 @@
             <p><a href="">Sri Lanka Tourism</a></p>
             <p><a href="">Honeymoon Destinations In India</a></p>
         </div>
-         <div class="footer-right">
-            <h3>Partner Programs</h3> 
+        <div class="footer-right">
+            <h3>Partner Programs</h3>
             <p><a href="">Buy Travel Leads</a></p>
             <p><a href="">Partner With Us</a></p>
             <p><a href="">Earn Credits</a></p>
@@ -884,12 +1301,13 @@
             <p><a href="">Import Blog To Itinerary</a></p>
         </div>
     </div>
-    
+
     <hr id="down">
     <center>© All rights reserved.</center>
 
-                    
+
 </body>
 <script src="index.js"></script>
+<script src="./login-signup.js"></script>
 
 </html>

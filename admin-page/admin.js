@@ -261,6 +261,14 @@ searchBtn.addEventListener('click', function (e) {
 })
 
 
+//----------------------------------------------------------------------------------------\
+
+let logoutBtn = document.querySelector('#logout');
+
+logoutBtn.addEventListener('click', function(){
+    localStorage.setItem('active-user', null);
+    window.open('../index.html', '_self')
+})
 
 //---------------------------------------------------------------------------
 
