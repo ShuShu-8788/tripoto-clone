@@ -14,25 +14,32 @@
       #main {
         display: flex;
         justify-content: space-evenly;
+        align-items: baseline;
         margin: 0 10%;
-        border: 2px solid yellow;
-        gap: 10px;
+        gap: 25px;
+        border-bottom: 1px solid #9197a3;
       }
       /* Box-1 */
       .slideshow {
         display: flex;
         justify-content: center;
-        border: 1px solid red;
+       
       }
       .slideshow img {
         max-width: 60%;
-        border: 1px solid red;
+      
       }
       /* Box-2 */
-      .pakage-Retreats,
-      .price {
+      .price,.pakage-Retreats {
         display: flex;
         justify-content: space-between;
+      }
+      .price{
+        margin-bottom: 30px;
+      }
+     .pakage-Retreats {
+        border-bottom:  1px solid #9197a3;
+        margin-bottom: 30px;
       }
       .pakage-Retreats > div:nth-child(2) {
         color: #ff6633;
@@ -76,7 +83,6 @@
       .Inclusions,
       .Exclusions {
         border-top: 1px solid #9197a3;
-        border-bottom: 1px solid #9197a3;
       }
       /* Box-7 */
 
@@ -149,11 +155,11 @@
       }
       /* <!-- Review --> */
       #review {
-        margin-top: 10px;
         border: 1px solid #9197a3;
         max-width: 50%;
         margin: auto;
         padding: 10px;
+        margin-top: 20px;
       }
       .review-chat {
         display: flex;
@@ -172,29 +178,26 @@
         align-self: baseline;
       }
       /* <!-- PaymentForm --> */
-      article {
-        border: 1px solid orange;
-      }
-      aside {
-        border: 1px solid green;
-      }
-      form {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        display: flex;
-        flex-direction: column;
+      aside{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         padding: 10px;
         position: sticky;
         top: 10px;
-        /* width: 280px; */
-        gap: 10px;
         border-radius: 5px;
+        min-width: 28%;
+        min-height: auto;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
       }
       form input,
       fieldset {
         border-radius: 3px;
       }
-      form > h3 {
-        font-family: helvetica, arial, sans-serif;
+      form > h4{
+        text-align: center;
       }
       select {
         border: 0;
@@ -203,7 +206,6 @@
       .form-Amount {
         display: flex;
         justify-content: space-between;
-        border: 1px solid red;
       }
       .form-Amount span {
         font-weight: bold;
@@ -214,10 +216,21 @@
       }
       /* check-out-button */
       .form-bill-btn {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
-        border: 1px solid pink;
         font-size: small;
+        text-align: center;
+        gap: 15px;
+      }
+      .form-bill-btn button{
+        border: 0;
+        background-color:  #2f9bdb;
+        border-radius: 3px;
+        color: white;
+        min-height: 60px;
+        font-size: 150%;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -523,47 +536,44 @@
               </li>
             </div>
             <!-- Terms and Conditions -->
-            <div class="dropdown">
-              <button class="dropbtn">Terms and Conditions</button>
-              <div class="dropdown-content">
-                <p>
-                  Last-minute change of plans? Let us know 72 hours ahead of the
-                  stay and pick another date as per your convenience within the
-                  next three months.
-                </p>
-                <p>
-                  In case an experience is cancelled, the refund will be
-                  processed within 45 days.
-                </p>
-                <p>
-                  Hosts alone are responsible for the experiences they provide.
-                  Tripoto assumes no liability and is only responsible for
-                  making the experiences and host's services available through
-                  the Tripoto platform.
-                </p>
-              </div>
-            </div>
+            <details>
+              <summary>Terms and Conditions</summary>
+              <p>
+                Last-minute change of plans? Let us know 72 hours ahead of the
+                stay and pick another date as per your convenience within the
+                next three months.
+              </p>
+              <p>
+                In case an experience is cancelled, the refund will be
+                processed within 45 days.
+              </p>
+              <p>
+                Hosts alone are responsible for the experiences they provide.
+                Tripoto assumes no liability and is only responsible for
+                making the experiences and host's services available through
+                the Tripoto platform.
+              </p>
+            </details>
             <!-- Cancellation Policy -->
-            <div class="dropdown">
-              <button class="dropbtn">Cancellation Policy</button>
-              <div class="dropdown-content">
-                <p>
-                  Last-minute change of plans? Let us know 72 hours ahead of the
-                  stay and pick another date as per your convenience within the
-                  next three months.
-                </p>
-                <p>
-                  In case an experience is cancelled, the refund will be
-                  processed within 45 days.
-                </p>
-                <p>
-                  Hosts alone are responsible for the experiences they provide.
-                  Tripoto assumes no liability and is only responsible for
-                  making the experiences and host's services available through
-                  the Tripoto platform.
-                </p>
-              </div>
-            </div>
+            <details>
+              <summary>Cancellation Policy</summary>
+              <p>
+                Last-minute change of plans? Let us know 72 hours ahead of the
+                stay and pick another date as per your convenience within the
+                next three months.
+              </p>
+              <p>
+                In case an experience is cancelled, the refund will be
+                processed within 45 days.
+              </p>
+              <p>
+                Hosts alone are responsible for the experiences they provide.
+                Tripoto assumes no liability and is only responsible for
+                making the experiences and host's services available through
+                the Tripoto platform.
+              </p>
+            </details>
+    
           </div>
         </section>
       </article>
@@ -627,9 +637,7 @@
               <span>Amount:</span>
               <span>$1200</span>
             </div>
-            <input type="checkbox" /><label for=""
-              >Send me updates for this booking on Whatsapp</label
-            >
+            
             <div class="form-bill-btn">
               <span>Taxes and discounts are calculated at checkout.</span>
               <button>Next ➔</button>
@@ -637,6 +645,9 @@
                 >I accept the Terms of Use and Privacy Policy of Tripoto.</span
               >
             </div>
+            <input type="checkbox" /><label for=""
+              >Send me updates for this booking on Whatsapp</label
+            >
           </div>
         </form>
       </aside>
