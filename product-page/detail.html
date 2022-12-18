@@ -18,9 +18,6 @@
         border: 2px solid yellow;
         gap: 10px;
       }
-      #main article {
-        border: 1px solid blue;
-      }
       /* Box-1 */
       .slideshow {
         display: flex;
@@ -86,15 +83,10 @@
       /* Box-8 */
       /* Box-9 */
       /* Box-10 */
-      .dropbtn {
-      }
-      .dropdown {
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown-content {
-        display: none;
+      .Itinerary details{
+        border: 1px solid #9197a3 ;
+        padding: 20px;
+        margin-bottom: 10px;
       }
 
       /* More to Experience */
@@ -155,6 +147,78 @@
       center {
         margin-bottom: 50px;
       }
+      /* <!-- Review --> */
+      #review {
+        margin-top: 10px;
+        border: 1px solid #9197a3;
+        max-width: 50%;
+        margin: auto;
+        padding: 10px;
+      }
+      .review-chat {
+        display: flex;
+        flex-direction: column;
+      }
+      .review-chat div,
+      input {
+        padding: 10px;
+        border: 1px solid #9197a3;
+      }
+      .review-chat input {
+        height: 200px;
+      }
+      .review-chat button {
+        margin-top: 10px;
+        align-self: baseline;
+      }
+      /* <!-- PaymentForm --> */
+      article {
+        border: 1px solid orange;
+      }
+      aside {
+        border: 1px solid green;
+      }
+      form {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: sticky;
+        top: 10px;
+        /* width: 280px; */
+        gap: 10px;
+        border-radius: 5px;
+      }
+      form input,
+      fieldset {
+        border-radius: 3px;
+      }
+      form > h3 {
+        font-family: helvetica, arial, sans-serif;
+      }
+      select {
+        border: 0;
+        width: 100%;
+      }
+      .form-Amount {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+      }
+      .form-Amount span {
+        font-weight: bold;
+      }
+      /* check-box */
+      .form-bill > label {
+        font-size: 12px;
+      }
+      /* check-out-button */
+      .form-bill-btn {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid pink;
+        font-size: small;
+      }
     </style>
   </head>
   <body>
@@ -163,9 +227,10 @@
         <!-- top-section -->
         <section id="detail">
           <p>
-            ✈️ ≫ <a href="/product-page/product.html">Tour Packages</a> ≫Unwind
-            with a Karaoke Session & an Open-Air Movie at This Village-Themed
-            Retreat | a Kasauli Ggaon
+            ✈️ ≫
+            <a href="/product-page/product.html">Tour Packages</a> ≫Unwind with
+            a Karaoke Session & an Open-Air Movie at This Village-Themed Retreat
+            | a Kasauli Ggaon
           </p>
           <!-- Slider -->
 
@@ -393,63 +458,52 @@
               <!-- day-1 -->
               <details>
                 <summary>Day 1</summary>
-                hi
+                <li>
+                  Check in this Himachali style village style boutique stay
+                  followed by a tempting pahadi lunch.
+                </li>
+                <li>Post lunch, relax, and settle into your mud cottages.</li>
+                <li>
+                  In the evening, explore Kasauli village in the serenity of the
+                  hills.
+                </li>
+                <li>
+                  Soak in the views of snow-topped mountains and soft green
+                  luxuriance during sunset.
+                </li>
+                <li>
+                  Sing your heart out with your loved ones at Karaoke night.
+                </li>
+                <li>Piping hot dinner will be served.</li>
               </details>
-              <div class="dropdown">
-                <button class="dropbtn">Day 1</button>
-                <div class="dropdown-content">
-                  <li>
-                    Check in this Himachali style village style boutique stay
-                    followed by a tempting pahadi lunch.
-                  </li>
-                  <li>Post lunch, relax, and settle into your mud cottages.</li>
-                  <li>
-                    In the evening, explore Kasauli village in the serenity of
-                    the hills.
-                  </li>
-                  <li>
-                    Soak in the views of snow-topped mountains and soft green
-                    luxuriance during sunset.
-                  </li>
-                  <li>
-                    Sing your heart out with your loved ones at Karaoke night.
-                  </li>
-                  <li>Piping hot dinner will be served.</li>
-                </div>
-              </div>
               <!-- day-2 -->
-              <div class="dropdown">
-                <button class="dropbtn">Day 2</button>
-                <div class="dropdown-content">
-                  <li>Wake up to the chirping of birds.</li>
-                  <li>
-                    Have a hearty breakfast and then, lace up your shoes for a
-                    hike to the old British Mill.
-                  </li>
-                  <li>Have a delicious lunch once you’re back to base.</li>
-                  <li>
-                    Later in the afternoon, bring out the inner kid in you and
-                    enjoy a session of fun & games (archery competition, mini
-                    golf session, etc).
-                  </li>
-                  <li>
-                    Enjoy the charm of a open-air movie night amidst the
-                    mountains followed by dinner.
-                  </li>
-                </div>
-              </div>
+              <details>
+                <summary>Day 2</summary>
+                <li>Wake up to the chirping of birds.</li>
+                <li>
+                  Have a hearty breakfast and then, lace up your shoes for a
+                  hike to the old British Mill.
+                </li>
+                <li>Have a delicious lunch once you’re back to base.</li>
+                <li>
+                  Later in the afternoon, bring out the inner kid in you and
+                  enjoy a session of fun & games (archery competition, mini golf
+                  session, etc).
+                </li>
+                <li>
+                  Enjoy the charm of a open-air movie night amidst the mountains
+                  followed by dinner.
+                </li>
+              </details>
               <!-- day-3 -->
-              <div class="dropdown">
-                <button class="dropbtn">Day 3</button>
-                <div class="dropdown-content">
-                  <li>
-                    Wake up and enjoy a delicious breakfast with unparalleled
-                    views.
-                  </li>
-                  <li>Goodbyes and departure.</li>
-                </div>
-              </div>
-            </div>
+              <details>
+                <summary>Day 3</summary>
+                <li>
+                  Wake up and enjoy a delicious breakfast with unparalleled
+                  views.
+                </li>
+                <li>Goodbyes and departure.</li>
+              </details>
             <!-- Inclusions -->
             <div class="Inclusions">
               <h1>Inclusions</h1>
@@ -516,7 +570,7 @@
       <!-- PaymentForm -->
       <aside>
         <form action="">
-          <h3>Enter Your Details and Proceed To Book</h3>
+          <h4>Enter Your Details and Proceed To Book</h4>
           <input type="text" name="" id="" placeholder="Email" />
           <input type="text" name="" id="" placeholder="Full Name" />
           <input type="text" name="" id="" placeholder="Contact Number" />
@@ -567,6 +621,23 @@
             onfocus="(this.type='date')"
             onblur="(this.type='text')"
           />
+          <!-- Check-out -->
+          <div class="form-bill">
+            <div class="form-Amount">
+              <span>Amount:</span>
+              <span>$1200</span>
+            </div>
+            <input type="checkbox" /><label for=""
+              >Send me updates for this booking on Whatsapp</label
+            >
+            <div class="form-bill-btn">
+              <span>Taxes and discounts are calculated at checkout.</span>
+              <button>Next ➔</button>
+              <span
+                >I accept the Terms of Use and Privacy Policy of Tripoto.</span
+              >
+            </div>
+          </div>
         </form>
       </aside>
     </div>
