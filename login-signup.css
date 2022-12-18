@@ -1,93 +1,105 @@
-#signup-div form, #login-div form {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin: auto;
-    box-shadow: 0px 8px 24px 0 rgb(29 140 242 / 16%);
-    padding: 20px 15px;
-    border: 0.5px solid black;
-    border-radius: 10px;
-    font-size: 18px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    background-color: wheat;
-    margin-top: 100px;
-    /* display: none; */
+#signup-div form,
+#login-div form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  color: white;
+  border: 5px solid white;
+  border-radius: 10px;
+  font-size: larger;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 35%;
+  margin-top: 100px;
+  /* display: none; */
+  background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
+  z-index: 1;
 }
 
-#signup-div a, #login-div a{
-    text-decoration: none;
-    color: blue;
+#signup-div a,
+#login-div a {
+  text-decoration: none;
+  color: white;
 }
 
-#signup-div a:hover, #login-div a:hover{
-    text-decoration:underline;
-    color: blue;
+#signup-div a:hover,
+#login-div a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
-#signup-div form>label, #login-div form>label{
-    margin-top: 10px;
-    margin-bottom: 10px;
+#signup-div form > label,
+#login-div form > label {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-#signup-div input, #login-div input{
-    padding: 7px 10px;
-    font-size: 16px;
+#signup-div input,
+#login-div input {
+  padding: 7px 10px;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
-#signup-div input[type="submit"], #login-div input[type="submit"]{
-    margin-top: 20px;
-    align-items: center;
-    border: none;
-    padding: 15px 25px;
-    background-color: #5034ff;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-    margin-bottom: 10px;
+#signup-div input[type="submit"],
+#login-div input[type="submit"] {
+  margin-top: 20px;
+  align-items: center;
+  border: none;
+  padding: 15px 25px;
+  color: white;
+  background-color: #359391;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
-#signup-div input[type="submit"]:hover, #login-div input[type="submit"]:hover{
-    background-color: #7171de;
-    color: #F0F3FF;
+#signup-div input[type="submit"]:hover,
+#login-div input[type="submit"]:hover {
+  color: #359391;
+  background-color: white;
+  border: 2px solid #359391;
+  font-size: larger;
 }
 
-#signup-div, #login-div {
-    display: none;
+#signup-div,
+#login-div {
+  display: none;
 }
 
 .usersubmenu {
-    width: 200px;
-    background-color: white;
-    display: none;
-    position: absolute;
-    right: -20px;
-    top: 100%;
-    padding: 10px;
+  width: 200px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  right: -20px;
+  top: 100%;
+  padding: 10px;
 }
 
 .usermenu {
-    position: relative;
-    display: none;
+  position: relative;
+  display: none;
 }
 
 .usersubmenu ul {
-    list-style: none;
+  list-style: none;
 }
 
 .usersubmenu a {
-    color: #62646A;
-    padding: 5px;
-    display: block;
+  color: #62646a;
+  padding: 5px;
+  display: block;
 }
 
 .usermenu:hover .usersubmenu {
-    display: block;
+  display: block;
 }
 
 .usersubmenu a:hover {
-    background-color: #eee
+  background-color: #eee;
 }
-
-
