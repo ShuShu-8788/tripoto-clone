@@ -11,6 +11,21 @@
         font-family: helvetica, arial, sans-serif;
         color: #333333;
       }
+      /* <!-- nav-bar --> */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        color: white;
+        background-color: #2f9bdb;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav img {
+        max-width: 6%;
+      }
       #main {
         display: flex;
         justify-content: space-evenly;
@@ -72,6 +87,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 10px;
+        margin-top: 10px;
       }
       .Highlights-childs img {
         max-width: 20%;
@@ -240,9 +256,60 @@
         font-size: 150%;
         font-weight: bold;
       }
+      /* medium-Screen */
+      @media (max-width: 800px) {
+        #main {
+          flex-direction: column;
+        }
+        nav {
+          flex-direction: column;
+        }
+        nav > div {
+          display: none;
+          flex-direction: column;
+          position: fixed;
+          top: 43px;
+          background-color: #2f9bdb;
+          width: 100%;
+        }
+        aside {
+          align-self: stretch;
+        }
+        /* Box-5 */
+        .Highlights-childs {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .Highlights-childs img {
+        }
+        /* <!-- PaymentForm --> */
+        /* <!-- Review --> */
+        #review {
+        max-width: 100%;
+      }
+      .review-chat {
+      }
+      }
+      /* small-screen */
+      @media (max-width: 500px){
+        #main{
+          border: 1px solid red;
+          align-self: center;
+        }
+
+      }
     </style>
   </head>
   <body>
+    <!-- nav-bar -->
+    <nav>
+      <img src="/image/travelwaala-logo.png" alt="" />
+      <div>
+        <a href="">Inspiration</a>
+        <a href="">Forum</a>
+        <a href="">Packages</a>
+        <a href="">Publish Trip</a>
+      </div>
+    </nav>
     <div id="main">
       <article>
         <!-- top-section -->
