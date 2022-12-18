@@ -7,39 +7,85 @@
     <title>https://www.triwalWaala.com/collections</title>
     <style>
       /* Divided parts of mid-section */
-      #mid-body {
+      * {
+        font-family: helvetica, arial, sans-serif;
+        color: #333333;
+      }
+      #main {
         display: flex;
-        align-items: baseline;
-        border: 1px solid red;
+        justify-content: space-evenly;
         margin: 0 10%;
+        border: 2px solid yellow;
+        gap: 10px;
+      }
+      #main article {
+        border: 1px solid blue;
+      }
+      /* Box-1 */
+      .slideshow {
+        display: flex;
+        justify-content: center;
+        border: 1px solid red;
       }
       .slideshow img {
         max-width: 60%;
-        background-position: left;
-        animation: mymove;
-        animation-direction: reverse;
+        border: 1px solid red;
       }
-    
-
-      article {
-        border: 1px solid blue;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-      .pakage-Retreats {
+      /* Box-2 */
+      .pakage-Retreats,
+      .price {
         display: flex;
         justify-content: space-between;
-        border: 1px solid green;
       }
-
-      .pakage-Retreats > img {
-        width: 10%;
-        border-radius: 50px;
+      .pakage-Retreats > div:nth-child(2) {
+        color: #ff6633;
+        font-size: x-large;
+        font-weight: 600;
       }
+      .pakage-Retreats > div:nth-child(2):hover {
+        color: #1c70a2;
+      }
+      .pakage-Retreats img {
+        max-width: 30px;
+        border-radius: 50%;
+      }
+      /* Box-3 */
+      .price button {
+        color: white;
+        background-color: #359391;
+        border: 0;
+        border-radius: 3px;
+        padding: 10px 1%;
+      }
+      /* Box-4 */
+      .location span {
+        color: #9197a3;
+      }
+      .location h2 {
+        color: #333333;
+      }
+      /* Box-5 */
+      .Highlights-childs {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .Highlights-childs img {
+        max-width: 20%;
+      }
+      /* Box-6 */
+      #Overview,
+      .Itinerary,
+      .Inclusions,
+      .Exclusions {
+        border-top: 1px solid #9197a3;
+        border-bottom: 1px solid #9197a3;
+      }
+      /* Box-7 */
 
-      /* Day 1-2-3 Dropdown list */
+      /* Box-8 */
+      /* Box-9 */
+      /* Box-10 */
       .dropbtn {
       }
       .dropdown {
@@ -56,10 +102,63 @@
         display: flex;
         flex-direction: column;
       }
+
+      .footer-container {
+        width: 93vw;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* grid-template-rows:repeat(1,300px) ; */
+        gap: 30px;
+      }
+      .footer-right a {
+        text-decoration: none;
+        color: black;
+      }
+      .footer-right p,
+      h3 {
+        margin-bottom: 10px;
+      }
+      .footer-left {
+        width: 150px;
+        margin-left: 20px;
+      }
+      .footer-left-top a {
+        text-decoration: none;
+      }
+      .footer-left-middle {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 25px;
+      }
+      .footer-left-middle a {
+        color: black;
+      }
+      .footer-left-middle a:hover {
+        color: blue;
+      }
+      .footer-left-bottom {
+        width: 100%;
+      }
+      .footer-left-bottom img {
+        width: 150px;
+        height: 100px;
+      }
+
+      #up {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      #down {
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+      center {
+        margin-bottom: 50px;
+      }
     </style>
   </head>
   <body>
-    <div id="mid-body">
+    <div id="main">
       <article>
         <!-- top-section -->
         <section id="detail">
@@ -89,11 +188,11 @@
               />
               <span>Tripoto's Mindful Retreats ✔️</span>
             </div>
-            <div>08046162990</div>
+            <div>📞8046162990</div>
           </div>
 
           <div class="price">
-            <button></button>
+            <button>3 Days. 2 Nights</button>
             <span>$800</span>
           </div>
 
@@ -292,6 +391,10 @@
             <div class="Itinerary">
               <h1>Itinerary</h1>
               <!-- day-1 -->
+              <details>
+                <summary>Day 1</summary>
+                hi
+              </details>
               <div class="dropdown">
                 <button class="dropbtn">Day 1</button>
                 <div class="dropdown-content">
@@ -478,6 +581,75 @@
     </section>
     <!-- More to Experience -->
     <h1>More to Experience</h1>
+    <!-- footer -->
+
+    <hr id="up" />
+
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-left-top">
+          <a href="#"><h2>Travelwaala</h2></a>
+        </div>
+        <hr id="mid" />
+        <div class="footer-left-middle">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+          <a href=""><i class="fa-solid fa-wifi"></i></a>
+        </div>
+        <div class="footer-left-bottom">
+          <a href="#"
+            ><img
+              src="https://static.vecteezy.com/system/resources/previews/006/656/871/large_2x/google-play-and-download-playstore-free-vector.jpg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3>About Tripoto</h3>
+        <p><a href="">How It Works</a></p>
+        <p><a href="">FAQ’s</a></p>
+        <p><a href="">Privacy Policy</a></p>
+        <p><a href="">Terms & Conditions</a></p>
+        <p><a href="">Careers</a></p>
+        <p><a href=" ">Contact Us</a></p>
+      </div>
+      <div class="footer-right">
+        <h3>Products</h3>
+        <p><a href="">Tour Packages</a></p>
+        <p><a href="">Travel Guides</a></p>
+        <p><a href="">Trips & Itineraries</a></p>
+        <p><a href="">Weekend Getaways</a></p>
+        <p><a href="">Places to Visit</a></p>
+        <p><a href="">Other Travel Categories</a></p>
+        <p><a href="">Tripoto Forum</a></p>
+        <p><a href="">Honeymoon Packages</a></p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Important Travel Links</h3>
+        <p><a href="">Goa Tourism</a></p>
+        <p><a href="">Dubai Tourism</a></p>
+        <p><a href="">Singapore Tourism</a></p>
+        <p><a href="">Kerala Tourism</a></p>
+        <p><a href="">Manali Tourism</a></p>
+        <p><a href=" ">Bali Tourism</a></p>
+        <p><a href="">Sri Lanka Tourism</a></p>
+        <p><a href="">Honeymoon Destinations In India</a></p>
+      </div>
+      <div class="footer-right">
+        <h3>Partner Programs</h3>
+        <p><a href="">Buy Travel Leads</a></p>
+        <p><a href="">Partner With Us</a></p>
+        <p><a href="">Earn Credits</a></p>
+        <p><a href="">Get Paid To Travel</a></p>
+        <p><a href="">Import Blog To Itinerary</a></p>
+      </div>
+    </div>
+
+    <hr id="down" />
+    <center>© All rights reserved.</center>
   </body>
 </html>
 <script></script>
