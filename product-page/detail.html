@@ -5,308 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>https://www.triwalWaala.com/collections</title>
-    <style>
-      /* Divided parts of mid-section */
-      * {
-        font-family: helvetica, arial, sans-serif;
-        color: #333333;
-      }
-      /* <!-- nav-bar --> */
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        color: white;
-        background-color: #2f9bdb;
-      }
-      nav a {
-        color: white;
-        text-decoration: none;
-      }
-      nav img {
-        max-width: 6%;
-      }
-      #main {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: baseline;
-        margin: 0 10%;
-        gap: 25px;
-        border-bottom: 1px solid #9197a3;
-      }
-      /* Box-1 */
-      .slideshow {
-        display: flex;
-        justify-content: center;
-      }
-      .slideshow img {
-        max-width: 60%;
-      }
-      /* Box-2 */
-      .price,
-      .pakage-Retreats {
-        display: flex;
-        justify-content: space-between;
-      }
-      .price {
-        margin-bottom: 30px;
-      }
-      .pakage-Retreats {
-        border-bottom: 1px solid #9197a3;
-        margin-bottom: 30px;
-      }
-      .pakage-Retreats > div:nth-child(2) {
-        color: #ff6633;
-        font-size: x-large;
-        font-weight: 600;
-      }
-      .pakage-Retreats > div:nth-child(2):hover {
-        color: #1c70a2;
-      }
-      .pakage-Retreats img {
-        max-width: 30px;
-        border-radius: 50%;
-      }
-      /* Box-3 */
-      .price button {
-        color: white;
-        background-color: #359391;
-        border: 0;
-        border-radius: 3px;
-        padding: 10px 1%;
-      }
-      /* Box-4 */
-      .location span {
-        color: #9197a3;
-      }
-      .location h2 {
-        color: #333333;
-      }
-      /* Box-5 */
-      .Highlights-childs {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
-        margin-top: 10px;
-      }
-      .Highlights-childs img {
-        max-width: 20%;
-      }
-      /* Box-6 */
-      #Overview,
-      .Itinerary,
-      .Inclusions,
-      .Exclusions {
-        border-top: 1px solid #9197a3;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        text-align: justify;
-      }
-      #Overview ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      /* Box-7 */
-
-      /* Box-8 */
-      /* Box-9 */
-      /* Box-10 */
-      .Itinerary details {
-        border: 1px solid #9197a3;
-        padding: 20px;
-        margin-bottom: 10px;
-      }
-
-      /* More to Experience */
-      #packages {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .footer-container {
-        width: 93vw;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        /* grid-template-rows:repeat(1,300px) ; */
-        gap: 30px;
-      }
-      .footer-right a {
-        text-decoration: none;
-        color: black;
-      }
-      .footer-right p,
-      h3 {
-        margin-bottom: 10px;
-      }
-      .footer-left {
-        width: 150px;
-        margin-left: 20px;
-      }
-      .footer-left-top a {
-        text-decoration: none;
-      }
-      .footer-left-middle {
-        margin-top: 10px;
-        width: 100%;
-        font-size: 25px;
-      }
-      .footer-left-middle a {
-        color: black;
-      }
-      .footer-left-middle a:hover {
-        color: blue;
-      }
-      .footer-left-bottom {
-        width: 100%;
-      }
-      .footer-left-bottom img {
-        width: 150px;
-        height: 100px;
-      }
-
-      #up {
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-      #down {
-        margin-top: 50px;
-        margin-bottom: 10px;
-      }
-      center {
-        margin-bottom: 50px;
-      }
-      /* <!-- Review --> */
-      #review {
-        border: 1px solid #9197a3;
-        max-width: 50%;
-        margin: auto;
-        padding: 10px;
-        margin-top: 20px;
-      }
-      .review-chat {
-        display: flex;
-        flex-direction: column;
-      }
-      .review-chat div,
-      input {
-        padding: 10px;
-        border: 1px solid #9197a3;
-      }
-      .review-chat input {
-        height: 200px;
-      }
-      .review-chat button {
-        margin-top: 10px;
-        align-self: baseline;
-      }
-      /* <!-- PaymentForm --> */
-      aside {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        padding: 10px;
-        position: sticky;
-        top: 10px;
-        border-radius: 5px;
-        min-width: 28%;
-        min-height: auto;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      form input,
-      fieldset {
-        border-radius: 3px;
-      }
-      form > h4 {
-        text-align: center;
-      }
-      select {
-        border: 0;
-        width: 100%;
-      }
-      .form-Amount {
-        display: flex;
-        justify-content: space-between;
-      }
-      .form-Amount span {
-        font-weight: bold;
-      }
-      /* check-box */
-      .form-bill > label {
-        font-size: 12px;
-      }
-      /* check-out-button */
-      .form-bill-btn {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        font-size: small;
-        text-align: center;
-        gap: 15px;
-      }
-      .form-bill-btn button {
-        border: 0;
-        background-color: #2f9bdb;
-        border-radius: 3px;
-        color: white;
-        min-height: 60px;
-        font-size: 150%;
-        font-weight: bold;
-      }
-      /* medium-Screen */
-      @media (max-width: 800px) {
-        #main {
-          flex-direction: column;
-        }
-        nav {
-          flex-direction: column;
-        }
-        nav > div {
-          display: none;
-          flex-direction: column;
-          position: fixed;
-          top: 43px;
-          background-color: #2f9bdb;
-          width: 100%;
-        }
-        aside {
-          align-self: stretch;
-        }
-        /* Box-5 */
-        .Highlights-childs {
-          grid-template-columns: repeat(3, 1fr);
-        }
-        .Highlights-childs img {
-        }
-        /* <!-- PaymentForm --> */
-        /* <!-- Review --> */
-        #review {
-        max-width: 100%;
-      }
-      .review-chat {
-      }
-      }
-      /* small-screen */
-      @media (max-width: 500px){
-        #main{
-          border: 1px solid red;
-          align-self: center;
-        }
-
-      }
-    </style>
+    <link rel="stylesheet" href="/product-page/detail.css" />
+    <link
+      rel="icon"
+      href="https://www.linkpicture.com/q/travelwaala-logo_1.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- nav-bar -->
+    <!-- Nav-Bar -->
     <nav>
-      <img src="/image/travelwaala-logo.png" alt="" />
+      <a href="/index.html"
+        ><img src="/image/tribawala-removebg-preview.png" alt=""
+      /></a>
       <div>
-        <a href="">Inspiration</a>
+        <a href="">Inspirations</a>
         <a href="">Forum</a>
-        <a href="">Packages</a>
+        <a href="/product-page/product.html">Packages</a>
         <a href="">Publish Trip</a>
       </div>
     </nav>
@@ -325,7 +43,7 @@
           <div class="slideshow">
             <!-- <div class="numbertext">1 / 3</div> -->
             <img
-              src="https://cdn1.tripoto.com/media/filter/nxxl/img/2176903/Image/1662967999_id_3570_1.jpg"
+              src="https://cdn1.tripoto.com/media/filter/nxxl/img/2176903/Image/1649919310_urna_edit_10.jpg"
             />
           </div>
 
@@ -715,7 +433,7 @@
 
             <div class="form-bill-btn">
               <span>Taxes and discounts are calculated at checkout.</span>
-              <button>Next ➔</button>
+              <button id="btn" onclick="paymentpage()">Next ➔</button>
               <span
                 >I accept the Terms of Use and Privacy Policy of Tripoto.</span
               >
@@ -736,8 +454,6 @@
         <button>Post</button>
       </div>
     </section>
-    <!-- More to Experience -->
-    <h1>More to Experience</h1>
     <!-- footer -->
 
     <hr id="up" />
@@ -745,7 +461,9 @@
     <div class="footer-container">
       <div class="footer-left">
         <div class="footer-left-top">
-          <a href="#"><h2>Travelwaala</h2></a>
+          <a href="#">
+            <h2>Travelwaala</h2>
+          </a>
         </div>
         <hr id="mid" />
         <div class="footer-left-middle">
@@ -809,4 +527,8 @@
     <center>© All rights reserved.</center>
   </body>
 </html>
-<script></script>
+<script>
+  function paymentpage() {
+    window.location = "index.html";
+  }
+</script>

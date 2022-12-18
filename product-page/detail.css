@@ -1,0 +1,325 @@
+/* Divided parts of mid-section */
+* {
+  font-family: helvetica, arial, sans-serif;
+  color: #333333;
+}
+/* <!-- nav-bar --> */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #333333;
+  z-index: 1;
+}
+nav img {
+  max-width: 25%;
+}
+nav div {
+  display: flex;
+  gap: 100px;
+}
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-size: larger;
+}
+nav a:hover {
+  color: #359391;
+}
+
+#main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin: 0 10%;
+  gap: 25px;
+  border-bottom: 1px solid #9197a3;
+  margin-top: 15px;
+}
+/* Box-1 */
+.slideshow {
+  display: flex;
+  justify-content: center;
+}
+.slideshow img {
+  max-width: 60%;
+  border-radius: 10px;
+}
+/* Box-2 */
+.price,
+.pakage-Retreats {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  margin-bottom: 30px;
+}
+.pakage-Retreats {
+  border-bottom: 1px solid #9197a3;
+  margin-bottom: 30px;
+}
+.pakage-Retreats > div:nth-child(2) {
+  color: #ff6633;
+  font-size: x-large;
+  font-weight: 600;
+}
+.pakage-Retreats > div:nth-child(2):hover {
+  color: #1c70a2;
+}
+.pakage-Retreats img {
+  max-width: 30px;
+  border-radius: 50%;
+}
+/* Box-3 */
+.price button {
+  color: white;
+  background-color: #359391;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px 1%;
+}
+/* Box-4 */
+.location span {
+  color: #9197a3;
+}
+.location h2 {
+  color: #333333;
+}
+/* Box-5 */
+.Highlights-childs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+.Highlights-childs img {
+  max-width: 20%;
+}
+/* Box-6 */
+#Overview,
+.Itinerary,
+.Inclusions,
+.Exclusions {
+  border-top: 1px solid #9197a3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+}
+#Overview ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* Box-7 */
+
+/* Box-8 */
+/* Box-9 */
+/* Box-10 */
+.Itinerary details {
+  border: 1px solid #9197a3;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* More to Experience */
+#packages {
+  display: flex;
+  flex-direction: column;
+}
+
+/* <!-- Review --> */
+#review {
+  border: 1px solid #9197a3;
+  max-width: 50%;
+  margin: auto;
+  padding: 10px;
+  margin-top: 40px;
+}
+.review-chat {
+  display: flex;
+  flex-direction: column;
+}
+.review-chat div,
+input {
+  padding: 10px;
+  border: 1px solid #9197a3;
+}
+.review-chat input {
+  height: 200px;
+}
+.review-chat button {
+  margin-top: 10px;
+  align-self: baseline;
+  color: white;
+  border-radius: 2px;
+  background-color: #2f9bdb;
+  border: 0;
+  padding: 10px;
+  min-width: 10%;
+}
+/* <!-- PaymentForm --> */
+aside {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px;
+  position: sticky;
+  top: 130px;
+  border-radius: 5px;
+  min-width: 28%;
+  min-height: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input,
+fieldset {
+  border-radius: 3px;
+}
+form > h4 {
+  text-align: center;
+}
+select {
+  border: 0;
+  width: 100%;
+}
+.form-Amount {
+  display: flex;
+  justify-content: space-between;
+}
+.form-Amount span {
+  font-weight: bold;
+}
+/* check-box */
+.form-bill > label {
+  font-size: 12px;
+}
+/* check-out-button */
+.form-bill-btn {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  text-align: center;
+  gap: 15px;
+}
+.form-bill-btn button {
+  border: 0;
+  background-color: #2f9bdb;
+  border-radius: 3px;
+  color: white;
+  min-height: 60px;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+/* footer */
+
+.footer-container {
+  width: 93vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows:repeat(1,300px) ; */
+  gap: 30px;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-right p,
+h3 {
+  margin-bottom: 10px;
+}
+
+.footer-left {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.footer-left-top a {
+  text-decoration: none;
+}
+
+.footer-left-middle {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.footer-left-middle a {
+  color: black;
+}
+
+.footer-left-middle a:hover {
+  color: blue;
+}
+
+.footer-left-bottom {
+  width: 100%;
+}
+
+.footer-left-bottom img {
+  width: 150px;
+  height: 100px;
+}
+
+#up {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#down {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+center {
+  margin-bottom: 50px;
+}
+
+
+/* medium-Screen */
+@media (max-width: 800px) {
+  #main {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    align-items: baseline;
+    align-items: center;
+  }
+  aside {
+    align-self: stretch;
+  }
+  .Highlights-childs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #review {
+    max-width: 100%;
+  }
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* small-screen */
+@media (max-width: 500px) {
+  nav >div{
+    gap: 20px;
+  }
+  #main {
+    align-self: center;
+  }
+  .Highlights-childs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
