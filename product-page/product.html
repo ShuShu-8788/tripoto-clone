@@ -6,46 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tour-packages</title>
     <link rel="stylesheet" href="/product-page/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- navbar -->
-    <div
-      class="nav-box"
-      style="
-        background-image: url('https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg');
-        background-size: 100% 100%;
-      "
-    >
-      <div class="nav-top">
-        <div class="nav-top-left"><a href="#">Travelwaala</a></div>
-        <div class="nav-top-right">
-          <div><a href="#">Inspirations</a></div>
-          <div><a href="#">Forum</a></div>
-          <div><a href="#">Packages</a></div>
-          <div><a href="#">Publish Trip</a></div>
-          <div><a href="#">Sign in</a></div>
-        </div>
+    <!-- Nav-Bar -->
+    <nav>
+      <a href="/index.html"
+        ><img src="/image/tribawala-removebg-preview.png" alt=""
+      /></a>
+      <div>
+        <a href="">Inspirations</a>
+        <a href="">Forum</a>
+        <a href="">Packages</a>
+        <a href="">Publish Trip</a>
       </div>
-      <div class="nav-middle"><h1>Exclusive Tours & Holiday Packages</h1></div>
-      <input
-        type="text"
-        oninput="search()"
-        id="search"
-        placeholder="Search Packages For Destinations"
-      />
-    </div>
-
-    <header></header>
+    </nav>
 
     <!-- cart-item-pakages- -->
     <section id="packages">
+      <!-- Search-Bar -->
+      <input
+        type="text"
+        placeholder="Search Location..."
+        id="searchbar"
+        oninput="funsearch()"
+      />
+
       <p>✈️ ≫ Tripoto's Exclusive Tours & Holiday Packages</p>
       <h1>Tripoto's Mindful Retreats</h1>
       <div id="pakages-cards"></div>
     </section>
     <!-- <<fw22_0023>_day-3> -->
-    <!-- footer- -->
-    <footer></footer>
+    <!-- footer -->
+
+    <hr id="up" />
+
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-left-top">
+          <a href="#">
+            <h2>Travelwaala</h2>
+          </a>
+        </div>
+        <hr id="mid" />
+        <div class="footer-left-middle">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+          <a href=""><i class="fa-solid fa-wifi"></i></a>
+        </div>
+        <div class="footer-left-bottom">
+          <a href="#"
+            ><img
+              src="https://static.vecteezy.com/system/resources/previews/006/656/871/large_2x/google-play-and-download-playstore-free-vector.jpg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3>About Tripoto</h3>
+        <p><a href="">How It Works</a></p>
+        <p><a href="">FAQ’s</a></p>
+        <p><a href="">Privacy Policy</a></p>
+        <p><a href="">Terms & Conditions</a></p>
+        <p><a href="">Careers</a></p>
+        <p><a href=" ">Contact Us</a></p>
+      </div>
+      <div class="footer-right">
+        <h3>Products</h3>
+        <p><a href="">Tour Packages</a></p>
+        <p><a href="">Travel Guides</a></p>
+        <p><a href="">Trips & Itineraries</a></p>
+        <p><a href="">Weekend Getaways</a></p>
+        <p><a href="">Places to Visit</a></p>
+        <p><a href="">Other Travel Categories</a></p>
+        <p><a href="">Tripoto Forum</a></p>
+        <p><a href="">Honeymoon Packages</a></p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Important Travel Links</h3>
+        <p><a href="">Goa Tourism</a></p>
+        <p><a href="">Dubai Tourism</a></p>
+        <p><a href="">Singapore Tourism</a></p>
+        <p><a href="">Kerala Tourism</a></p>
+        <p><a href="">Manali Tourism</a></p>
+        <p><a href=" ">Bali Tourism</a></p>
+        <p><a href="">Sri Lanka Tourism</a></p>
+        <p><a href="">Honeymoon Destinations In India</a></p>
+      </div>
+      <div class="footer-right">
+        <h3>Partner Programs</h3>
+        <p><a href="">Buy Travel Leads</a></p>
+        <p><a href="">Partner With Us</a></p>
+        <p><a href="">Earn Credits</a></p>
+        <p><a href="">Get Paid To Travel</a></p>
+        <p><a href="">Import Blog To Itinerary</a></p>
+      </div>
+    </div>
+
+    <hr id="down" />
+    <center>© All rights reserved.</center>
   </body>
 </html>
 <script>
@@ -63,15 +128,13 @@
       return "error";
     }
   }
-  getpakages(); 
+  getpakages();
 
   function renderpakages(data) {
     let render = document.getElementById("pakages-cards");
     render.innerHTML = `
       ${data
         .map((item) => {
-         
-         
           return getascard(
             item.img,
             item.discription,
@@ -110,9 +173,9 @@
     </div>
     `;
   }
-  async function search() {
+  async function funsearch() {
     try {
-      let q = document.getElementById("search").value;
+      let q = document.getElementById("searchbar").value;
       let res = await fetch(
         "https://636a91d9c07d8f936da2035c.mockapi.io/travelWaala"
       );
