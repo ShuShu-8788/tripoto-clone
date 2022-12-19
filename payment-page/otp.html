@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="otp.css">
-</head>
-<body>
+    <link rel="stylesheet" href="otp.css" />
+  </head>
+  <body>
+    <img src="/image/tribawala-removebg-preview.png" alt="" id="logo" />
     <div class="container">
-        <h1>ENTER OTP</h1>
-        <div class="userinput">
-            <input type="text" maxlength="1" id="ist" onkeyup="clickEvent(this,'sec')">
-            <input type="text" maxlength="1" id="sec" onkeyup="clickEvent(this, 'third')">
-            <input type="text" maxlength="1" id="third" onkeyup="clickEvent(this, 'fourth')">
-            <input type="text" maxlength="1" id="fourth" onkeyup="clickEvent(this, 'fifth')">
-            <input type="text" maxlength="1" id="fifth">
-        </div>
-        <button id="btn" onclick="fun()">Confirm</button>
+      <h1>ENTER OTP</h1>
+      <div class="userinput">
+        <input
+          type="text"
+          maxlength="1"
+          id="ist"
+          onkeyup="clickEvent(this,'sec')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="sec"
+          onkeyup="clickEvent(this, 'third')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="third"
+          onkeyup="clickEvent(this, 'fourth')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="fourth"
+          onkeyup="clickEvent(this, 'fifth')"
+        />
+        <input type="text" maxlength="1" id="fifth" />
+      </div>
+      <button id="btn" onclick="fun()">Confirm</button>
     </div>
-</body>
+    <img
+      src="https://assets.materialup.com/uploads/9ba2d687-d7d3-4361-8aee-7b2a3c074761/preview.gif"
+      alt=""
+      id="paydone"
+    />
+    <!-- loading-screen -->
+    <div class="loading">
+      <div class="liquid"></div>
+      <div class="liquid"></div>
+      <div class="liquid"></div>
+      <div class="liquid"></div>
+    </div>
+  </body>
 </html>
 
 <script>
-    function clickEvent(first,last)
-    {
-        if (first.value.length)
-        {
-            document.getElementById(last).focus();
-        }
-    }
+   alert("Your OTP : 12121")
+  // function clickEvent(first,last)
+  // {
+  //     if (first.value.length)
+  //     {
+  //         document.getElementById(last).focus();
+  //     }
+  // }
 
-    function fun()
-    {
-        alert("Entered OTP is valid")
-        window.location.href = "C:\Users\DELL\Desktop\TravelWaala Project\quick-snake-3428\index.html"
-    }
+  function fun() {
+    document.querySelector(".userinput").style.display = "none";
+    document.querySelector("h1").style.display = "none";
+    document.getElementById("btn").style.display = "none";
+    document.querySelector(".loading").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("paydone").style.display = "block";
+      document.querySelector(".loading").style.display = "none";
+    }, 2000);
+    setTimeout(() => {
+      alert("payment successful");
+      window.location.href = "/index.html";
+    }, 3000);
+  }
 </script>
-

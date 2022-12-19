@@ -179,6 +179,7 @@
       let res = await fetch(
         "https://636a91d9c07d8f936da2035c.mockapi.io/travelWaala"
       );
+      // Search function
       let dataarr = await res.json();
       let newData = dataarr.filter(function (item) {
         return (

@@ -12,91 +12,69 @@
     />
   </head>
   <body>
-    <div class="row">
-      <div class="col-75">
-        <div class="container">
-          <form action="" id="form">
-            <div class="row">
-              <div class="col-50">
-                <h3>Book Your Travel</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  placeholder="Enter Name"
-                />
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="john@example.com"
-                />
-                <label for="adr"
-                  ><i class="fa-solid fa-phone"></i> Contact Number</label
-                >
-                <input type="text" placeholder="Number" />
-                <label for="text"
-                  ><i class="fa-solid fa-location-pin"></i> Departure
-                  City</label
-                >
-                <input type="text" placeholder="Departure City" />
-                <div class="row"></div>
-              </div>
+    <div class="mainscreen">
+      <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">-->
+      <div class="card">
+        <div class="leftside">
+          <img
+            src="/image/tribawala-removebg-preview.png"
+            class="product"
+            alt="Shoes"
+          />
+        </div>
+        <div class="rightside">
+          <form action="">
+            <h1>CheckOut</h1>
+            <h2>Payment Information</h2>
+            <p>Cardholder Name</p>
+            <input type="text" class="inputbox" name="name" required />
+            <p>Card Number</p>
+            <input
+              type="number"
+              class="inputbox"
+              name="card_number"
+              id="card_number"
+              required
+            />
 
-              <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                  <i class="fa fa-cc-visa" style="color: navy"></i>
-                  <i class="fa fa-cc-amex" style="color: blue"></i>
-                  <i class="fa fa-cc-mastercard" style="color: red"></i>
-                  <i class="fa fa-cc-discover" style="color: orange"></i>
-                </div>
-                <label for="cname">Name on Card</label>
-                <input
-                  type="text"
-                  id="cname"
-                  name="cardname"
-                  placeholder="Enter Name"
-                />
-                <label for="ccnum">Credit card number</label>
-                <input
-                  type="text"
-                  id="ccnum"
-                  name="cardnumber"
-                  placeholder="Enter Card Number"
-                />
-                <label for="expmonth">Exp Month</label>
-                <input
-                  type="text"
-                  id="expmonth"
-                  name="expmonth"
-                  placeholder="September"
-                />
+            <p>Card Type</p>
+            <select class="inputbox" name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="Visa">Visa</option>
+              <option value="RuPay">RuPay</option>
+              <option value="MasterCard">MasterCard</option>
+            </select>
+            <div class="expcvv">
+              <p class="expcvv_text">Expiry</p>
+              <input
+                type="date"
+                class="inputbox"
+                name="exp_date"
+                id="exp_date"
+                required
+              />
 
-                <div class="row">
-                  <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input
-                      type="text"
-                      id="expyear"
-                      name="expyear"
-                      placeholder="2018"
-                    />
-                  </div>
-                  <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352" />
-                  </div>
-                </div>
-              </div>
+              <p class="expcvv_text2">CVV</p>
+              <input
+                type="password"
+                class="inputbox"
+                name="cvv"
+                id="cvv"
+                required
+              />
             </div>
-            <input type="submit" value="Continue to checkout" class="btn" />
+            <p></p>
+            <button type="submit" class="button" onclick="otppage()">
+              CheckOut
+            </button>
           </form>
         </div>
       </div>
     </div>
   </body>
+  <script>
+    function otppage() {
+      window.location.href = "/payment-page/otp.html";
+    }
+  </script>
 </html>

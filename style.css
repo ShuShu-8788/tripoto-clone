@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* admin page */
@@ -32,10 +33,12 @@ body {
 .fixedheader {
   position: fixed;
   background-color: #2f9bdb;
+  background-color: #333333;
   top: 0px;
   left: 0px;
   right: 0px;
-  padding: 15px 100px;
+ padding: 10px 50px;
+  
   z-index: 1;
 }
 
@@ -108,10 +111,12 @@ body {
 
 .menu1:hover .submenu1 {
   display: block;
+  border-radius: 10px;
 }
 
 .submenu1 a:hover {
   background-color: #eee;
+  border-radius: 10px;
 }
 
 .submenu2 {
@@ -140,10 +145,12 @@ body {
 
 .menu2:hover .submenu2 {
   display: block;
+  border-radius: 10px;
 }
 
 .submenu2 a:hover {
   background-color: #eee;
+  border-radius: 10px;
 }
 
 /* sponsered */
@@ -161,6 +168,7 @@ body {
 
 .sponser-heading a:hover {
   color: #2f9bdb;
+  border-radius: 10px;
 }
 
 .sponser-img {
@@ -490,6 +498,7 @@ h3 {
 
 .footer-left-middle a:hover {
   color: blue;
+
 }
 .footer-left-bottom img {
   max-width: 100%;
@@ -555,7 +564,6 @@ center {
   }
   /* top place to visit */
 
-
   .place-visit {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -586,8 +594,6 @@ center {
     display: none;
   }
 
-  
-
   .arrow {
     display: none;
   }
@@ -600,7 +606,6 @@ center {
   .creator-pro {
     grid-template-columns: repeat(3, 1fr);
   }
-
 
   /* destination of the month */
 
