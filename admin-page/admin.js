@@ -4,6 +4,10 @@ let edit_div = document.querySelector('#div-edit');     // Product edit parent d
 let edit_form = document.querySelector('#edit-form')    // Product edit form
 let section = document.querySelector('#section');       // here data is appended
 
+let add_div = document.querySelector('#div-add');
+let add_form = document.querySelector('#add-form');
+let add_prod_btn = document.querySelector('#add-product-btn');
+
 let viewProductsPageBtn = document.querySelector('#products-page'); // show products
 let viewUsersPageBtn = document.querySelector('#users-page');       // show users
 
@@ -17,13 +21,17 @@ let endpoint='/travelWaala';    // url api endpoint eg. www.example.com/endpoint
 
 viewProductsPageBtn.addEventListener('click', function () {
     endpoint='/travelWaala';
+    add_prod_btn.style.display='block';
     getProductsData();
 })
 
 viewUsersPageBtn.addEventListener('click', function (e) {
     endpoint='/users';
+    add_prod_btn.style.display='none';
     getUsersData();
 });
+
+add_prod_btn.style.display='block';
 
 async function getUsersData() {
     let res = await fetch(url+endpoint);
@@ -51,9 +59,46 @@ async function getProductsData() {
 getProductsData();
 
 edit_div.style.display = 'none';
+add_div.style.display = 'none';
+
+//------------------------------------------------------------------------------------------------------------
+
+// Event listener for add product button.
+
+add_prod_btn.addEventListener('click', function(){
+    add_div.style.display = 'block';
+});
+
+// Event listener for product form submit.
+
+add_form.addEventListener('submit', async function(e){
+    e.preventDefault();
+
+    let dataObj = {};
+
+    dataObj.img = add_form.add_img.value;
+    dataObj.discription = add_form.add_description.value;
+    dataObj.price = add_form.add_price.value;
+    dataObj.location = add_form.add_location.value;
+
+    let res = await fetch(url+'/travelWaala', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(dataObj)
+    })
+    let data = await res.json();
+
+    getProductsData()
+
+    alert('Package added to website sucessfully')
+
+    add_div.style.display = 'none';
+})
 
 
-//--------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
 
 // display users data on #section
 
@@ -79,7 +124,10 @@ function displayUsersData(data) {
             e.preventDefault();
             fetch(`${url}${endpoint}/${ele.id}`, {
                 method: 'DELETE'
-            }).then(data => getUsersData())
+            }).then(data => { 
+                alert('Account Deleted Sucessfully');
+                getUsersData()
+            })
         })
         section.append(div);
         div.append(id, name, mobile, email, password, del)
@@ -110,7 +158,10 @@ function displayUserById(id) {
                 e.preventDefault();
                 fetch(`${url}${endpoint}/${ele.id}`, {
                     method: 'DELETE'
-                }).then(data => getUsersData())
+                }).then(data => { 
+                    alert('Account Deleted Sucessfully');
+                    getUsersData()
+                })
             })
             section.append(div);
             div.append(id, name, mobile, email, password, del)
@@ -148,7 +199,10 @@ function displayProductsData(data) {
             e.preventDefault();
             fetch(`${url}${endpoint}/${ele.id}`, {
                 method: 'DELETE'
-            }).then(data => getProductsData())
+            }).then(data => { 
+                alert('Package Deleted Sucessfully');
+                getProductsData();
+            })
         })
         section.append(div);
         div_btn.append(edit, del)
@@ -186,7 +240,10 @@ function displayProductById(id) {
                 e.preventDefault();
                 fetch(`${url}${endpoint}/${ele.id}`, {
                     method: 'DELETE'
-                }).then(data => getProductsData())
+                }).then(data => { 
+                    alert('Package Deleted Sucessfully');
+                    getProductsData();
+                })
             })
             section.append(div);
             div.append(img, id, location, price, des, edit, del)
@@ -224,6 +281,8 @@ function edit_form_data(ele) {
         let data = await res.json();
 
         getProductsData()
+
+        alert('Package Edited Sucessfully');
 
         edit_div.style.display = 'none';
     })
