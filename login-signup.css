@@ -5,8 +5,8 @@
   padding: 20px 15px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-  color: white;
-  border: 5px solid white;
+  color: black;
+  border: 1px solid black;
   border-radius: 10px;
   font-size: larger;
   position: fixed;
@@ -15,20 +15,20 @@
   margin: 0 35%;
   margin-top: 100px;
   /* display: none; */
-  background-image: url("https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg");
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/119/108/original/plain-dirty-grunge-background-vector.jpg");
   z-index: 1;
 }
 
 #signup-div a,
 #login-div a {
   text-decoration: none;
-  color: white;
+  color: blue;
 }
 
 #signup-div a:hover,
 #login-div a:hover {
   text-decoration: underline;
-  color: white;
+  font-size: 20px;
 }
 
 #signup-div form > label,
@@ -39,7 +39,7 @@
 
 #signup-div input,
 #login-div input {
-  padding: 7px 10px;
+  padding: 12px;
   font-size: 16px;
   border-radius: 10px;
 }
