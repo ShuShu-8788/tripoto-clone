@@ -17,6 +17,7 @@
   /* display: none; */
   background-image: url("https://static.vecteezy.com/system/resources/previews/000/119/108/original/plain-dirty-grunge-background-vector.jpg");
   z-index: 1;
+  margin-top: 3em;
 }
 
 #signup-div a,
@@ -29,6 +30,24 @@
 #login-div a:hover {
   text-decoration: underline;
   font-size: 20px;
+}
+
+/* cross-button */
+#signup-form > span,
+#login-form > span {
+  font-size: 30px;
+  font-weight: bolder;
+  align-self: flex-end;
+  color: #359391;
+}
+#signup-form > span:hover,
+#login-form > span:hover {
+  cursor: pointer;
+}
+#signup-form > span:active,
+#login-form > span:active {
+  color: red;
+  user-select: none;
 }
 
 #signup-div form > label,
@@ -105,7 +124,18 @@
 }
 /* mid-screen */
 @media (max-width: 800px) {
+  #signup-div form,
+  #login-div form {
+    margin: auto;
+    max-width: 25em;
+    margin-top: 5em;
+    font-size: medium;
+  }
 }
 /* low-screen */
 @media (max-width: 500px) {
+  #signup-div form,
+  #login-div form {
+    max-width: 20em;
+  }
 }
