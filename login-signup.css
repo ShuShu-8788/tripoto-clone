@@ -103,3 +103,9 @@
 .usersubmenu a:hover {
   background-color: #eee;
 }
+/* mid-screen */
+@media (max-width: 800px) {
+}
+/* low-screen */
+@media (max-width: 500px) {
+}
