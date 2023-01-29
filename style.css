@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 /* admin page */
@@ -36,8 +36,8 @@ body {
   top: 0px;
   left: 0px;
   right: 0px;
- padding: 10px 50px;
-  
+  padding: 10px 50px;
+
   z-index: 1;
 }
 
@@ -241,8 +241,12 @@ body {
 /* top place to visit */
 
 .place-visit-header h2 {
-  margin-top: 20px;
-  margin-left: 130px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: center;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .place-visit-header a {
@@ -497,7 +501,6 @@ h3 {
 
 .footer-left-middle a:hover {
   color: blue;
-
 }
 .footer-left-bottom img {
   max-width: 100%;
