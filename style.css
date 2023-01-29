@@ -214,7 +214,10 @@ body {
 }
 
 .desc1 {
-  color: red;
+  color: #ff6b08;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .desc1 p {
@@ -222,9 +225,9 @@ body {
 }
 
 .desc2 p {
-  color: black;
-  font-size: small;
   font-weight: bold;
+  color: #306dc2;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* image slider */
@@ -266,11 +269,13 @@ body {
 
 .place-visit a {
   text-decoration: none;
-  color: black;
+  color: #359391;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .place-visit-para > span > a {
-  color: blue;
+  color: #2f9bdb;
+  font-style: italic;
 }
 
 .place-visit-para {
@@ -300,12 +305,14 @@ body {
 }
 
 .best-place-box a {
-  color: black;
+  color: sienna;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
 }
 
 .best-place-box img {
   max-width: 100%;
+  border-radius: 100px ;
 }
 
 /* corousel/slider-2&3  */
@@ -427,9 +434,10 @@ body {
 /* <!-- creators of the month --> */
 
 .creator-header {
-  margin-left: 140px;
-  margin-bottom: 15px;
-  margin-top: 30px;
+  text-align: center;
+  margin-top: 2%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #333333;
 }
 
 .creator-pro {
@@ -447,7 +455,8 @@ body {
 /* destination of the month */
 
 .destination-header {
-  margin: 15px 0px 10px 140px;
+ text-align: center;
+ color: #2f9bdb;
 }
 
 .destination-pro {
@@ -472,11 +481,12 @@ hr {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0 5%;
+  font-size: small;
 }
 
 .footer-right a {
   text-decoration: none;
-  color: black;
+  color:  #62646a;
 }
 
 .footer-right p,
@@ -613,7 +623,6 @@ center {
   /* destination of the month */
 
   .destination-header {
-    margin: 15px 0px 10px 140px;
   }
 
   .destination-pro {
