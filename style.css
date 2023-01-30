@@ -312,7 +312,7 @@ body {
 
 .best-place-box img {
   max-width: 100%;
-  border-radius: 100px ;
+  border-radius: 10px 20px 10px 10px;
 }
 
 /* corousel/slider-2&3  */
@@ -492,18 +492,16 @@ hr {
 .footer-right p,
 h3 {
   margin-bottom: 10px;
+  color: #010915;
 }
 
 .footer-left {
   font-size: 150%;
+  color: #306dc2;
 }
-
-.footer-left-top a {
-  text-decoration: none;
-}
-
 .footer-left-middle {
   margin-top: 10px;
+  font-size: x-large;
 }
 
 .footer-left-middle a {
@@ -527,7 +525,10 @@ h3 {
   margin-bottom: 10px;
 }
 center {
-  margin-bottom: 50px;
+  padding-bottom: 10px;
+  color: #333333;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
 }
 
 /* medium-Screen */
