@@ -1,6 +1,6 @@
 # -quick-snake-3428
 
-** -IA manager - Anshumaan Baaghi**
+**-IA manager - Anshumaan Baaghi**
 
 ###### -Team Lead - fw22_0023 - Shubham Sonawane
 ###### -Member 1 - fw22_1106 - Chandan Kumar
