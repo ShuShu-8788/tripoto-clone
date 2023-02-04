@@ -11,7 +11,7 @@ nav {
   position: sticky;
   top: 0;
   background-color: white;
-  border-bottom: 1px solid #333333;
+  border-bottom: 4px solid #2f9bdb;
   z-index: 1;
 }
 nav img {
