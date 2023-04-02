@@ -4,10 +4,10 @@ This is a full-stack web project created by the following collaborators:
 
 | Collaborators    |
 |------------------|
-| [Darshan Nashikkar](https://github.com/Darshan0261) |
-| [Shubham Sonawane](https://github.com/ShuShu-8788) |
-| [Chandan Kumar](https://github.com/chandan1506) |
-| [Hrithik Bansal](https://github.com/hrithik2712k) |
+- [Darshan Nashikkar](https://github.com/Darshan0261)
+- [Shubham Sonawane](https://github.com/ShuShu-8788)
+- [Chandan Kumar](https://github.com/chandan1506)
+- [Hrithik Bansal](https://github.com/hrithik2712k)
 
 It is a clone of the Trippoto website, which is a global community of travelers who can book hotels around the globe.
 
