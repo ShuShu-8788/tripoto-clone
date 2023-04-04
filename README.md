@@ -57,7 +57,7 @@ The project has been divided into different folders to manage the code effective
 
 ## Deployment
 
-The website has been deployed on [Netlify](https://www.netlify.com/), and it can be accessed through this link: https://travelwaala.netlify.app
+The website has been deployed on [Netlify](https://www.netlify.com/), and it can be accessed through this link: https://spontaneous-baklava-41eacc.netlify.app
 
 ## Screenshots
 
