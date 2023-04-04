@@ -40,7 +40,6 @@ function booknow() {
 }
 let count = 1;
 function changeS() {
-  console.log(count);
   if (count === 1) {
     document.getElementById(`sec1`).style.display = "none";
     document.getElementById(`sec2`).style.display = "block";
@@ -59,7 +58,6 @@ function changeS() {
   }
 }
 function changeS2() {
-  console.log(count);
   if (count === 1) {
     document.getElementById(`sec1`).style.display = "none";
     document.getElementById(`sec2`).style.display = "none";
@@ -85,7 +83,6 @@ function booknow() {
   window.location = "/product-page/detail.html";
 }
 function changeS3() {
-  console.log(count);
   if (count === 1) {
     document.getElementById(`sec4`).style.display = "none";
     document.getElementById(`sec5`).style.display = "block";
@@ -97,7 +94,6 @@ function changeS3() {
   }
 }
 function changeS4() {
-  console.log(count);
   if (count === 1) {
     document.getElementById(`sec5`).style.display = "block";
     document.getElementById(`sec4`).style.display = "none";
@@ -118,7 +114,6 @@ function booknow() {
   window.location = "/product-page/detail.html";
 }
 function spotlight_plus() {
-  // console.log(count);
   if (count === 1) {
     document.getElementById(`sec6`).style.display = "none";
     document.getElementById(`sec7`).style.display = "block";
@@ -137,7 +132,6 @@ function spotlight_plus() {
   }
 }
 function spotlight_minus() {
-  //  console.log(count);
   if (count === 1) {
     document.getElementById(`sec6`).style.display = "none";
     document.getElementById(`sec7`).style.display = "none";

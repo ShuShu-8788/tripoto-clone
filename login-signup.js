@@ -23,7 +23,6 @@ async function getUsers() {
   let res = await fetch(url);
   let data = await res.json();
   users = data;
-  console.log(users);
 }
 
 signupBtn.addEventListener("click", function () {
