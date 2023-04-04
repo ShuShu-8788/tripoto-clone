@@ -39,7 +39,7 @@ The following technologies have been used in this project:
 - CSS
 - JavaScript
 - DOM manipulation
-- Mock API
+- CRUD ON APIs
 
 ## Folder Structure
 
@@ -51,9 +51,13 @@ The project has been divided into different folders to manage the code effective
 - `product-page`: contains the product listing and product details page files
 - `login-page`: contains the login and signup files
 
+## APIs Used
+
+- [MockAPI.com](https://mockapi.io/): used to generate dummy product data.
+
 ## Deployment
 
-The project has been deployed on Netlify, which allows us to host web projects with ease.
+The website has been deployed on [Netlify](https://www.netlify.com/), and it can be accessed through this link: https://travelwaala.netlify.app
 
 ## Screenshots
 
