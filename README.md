@@ -1,9 +1,9 @@
 <h1 align="center">TravelWaala - Tripoto Clone</h1>
 <p align="center"><img width="150px" src="https://www.linkpicture.com/q/travelwaala.jpg"></p>
- <h2> A question-answer website that unites programmers all over the globe.</h2>
+ <h2 > An online platform that offers travelling services.</h2>
 <br>
 
-This is a Stack Overflow clone project where at ask page you can post your questions, at questions page you can see the list of questions and answer the questions with the restriction of not answering your own question and at users page admin can see the list of users listed in the website.
+This is a Tripoto clone project where at home page you can have all the informations regarding this website, at packages page you can book your package to become our travel partner and at admin page admin can see the list of users,packages listed in the website.
 
 
 
