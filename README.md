@@ -1,5 +1,5 @@
-<h1 align="center">Travelwaala - Tripoto Clone</h1>
-<p align="center"><img  src="https://www.linkpicture.com/q/DevQuery.logo_1.png"></p>
+<h1 align="center">TravelWaala - Tripoto Clone</h1>
+<p align="center"><img width="150px" src="https://www.linkpicture.com/q/travelwaala.jpg"></p>
  <h2> A question-answer website that unites programmers all over the globe.</h2>
 <br>
 
