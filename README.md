@@ -7,16 +7,13 @@ This is a Tripoto clone project where at home page you can have all the informat
 
 
 
-This is a full-stack web project created by the following collaborators:
 
 | Collaborators    |
 |------------------|
-- [Darshan Nashikkar](https://github.com/Darshan0261)
-- [Shubham Sonawane](https://linkfree.eddiehub.io/ShuShu-8788)
-- [Chandan Kumar](https://github.com/chandan1506)
-- [Hrithik Bansal](https://github.com/hrithik2712k)
-
-It is a clone of the Trippoto website, which is a global community of travelers who can book hotels around the globe.
+- [@Darshan Nashikkar](https://github.com/Darshan0261)
+- [@Shubham Sonawane](https://linkfree.eddiehub.io/ShuShu-8788)
+- [@Chandan Kumar](https://github.com/chandan1506)
+- [@Hrithik Bansal](https://github.com/hrithik2712k)
 
 ## Table of Contents
 
@@ -38,15 +35,11 @@ The following features have been implemented in this project:
 - Admin panel for CRUD operations on data
 - Login and Signup functionality
 
-## Technologies Used
-
-The following technologies have been used in this project:
+## Tech Stacks
 
 - HTML
 - CSS
 - JavaScript
-- DOM manipulation
-- CRUD ON APIs
 
 ## Folder Structure
 
