@@ -59,7 +59,7 @@ The project has been divided into different folders to manage the code effective
 
 The website has been deployed on [Netlify](https://www.netlify.com/), and it can be accessed through this link: https://tripotoclone.netlify.app/
 
-## Screenshots
+## Project Highlights
 
 Here are some screenshots of the project:
 
